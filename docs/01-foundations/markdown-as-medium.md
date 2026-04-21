@@ -251,7 +251,7 @@ Complex:    # Chapter 3: Execution Strategy
             |-------|----------|-----|-------|
             ...
             ### 3.1.1 Detailed Methodology
-            > Cross-reference: See [Chapter 2, Section 2.3](chapter_02.md#23)
+            > Cross-reference: See chapter_02.md (Section 2.3)
 ```
 
 **2. Headers as Semantic Anchors 標題作為語義錨點**
@@ -449,7 +449,7 @@ If information exists in one `.md` file, other files should link to it, not copy
 
 ```
 Bad 壞:    In chapter_03.md: "Budget is $50K (as decided on April 15)"
-Good 好:   In chapter_03.md: "Budget details: see [decisions.md](decisions.md#budget)"
+Good 好:   In chapter_03.md: "Budget details: see decisions.md (Budget section)"
 ```
 
 ---
