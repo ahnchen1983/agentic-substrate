@@ -6,7 +6,7 @@
 
 ---
 
-## The Everyday Workflow ── 日常工作流程
+## The Everyday Workflow - 日常工作流程
 
 A project manager prepares a weekly status update every Friday.
 
@@ -38,7 +38,7 @@ This is not "just experience." It is already a workflow specification.
 
 ---
 
-## The Same Knowledge as a Skill ── 同一份知識變成 Skill
+## The Same Knowledge as a Skill - 同一份知識變成 Skill
 
 ```markdown
 # Weekly Status Synthesizer
@@ -84,7 +84,7 @@ meeting notes, or chat history and asks for a weekly status update.
 
 ---
 
-## Why This Matters ── 為什麼這重要
+## Why This Matters - 為什麼這重要
 
 The project manager did not learn programming. They simply described how good work is done.
 
@@ -102,7 +102,7 @@ That is the central idea of Agentic Substrate:
 
 ---
 
-## Try It ── 你可以試試看
+## Try It - 你可以試試看
 
 Take one task you repeat every week and answer seven questions:
 
@@ -119,4 +119,3 @@ Take one task you repeat every week and answer seven questions:
 If you can answer these, you already have the skeleton of a Skill.
 
 如果你能回答這些，你就已經有一個 Skill 的骨架。
-

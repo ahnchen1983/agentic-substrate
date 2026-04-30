@@ -6,7 +6,7 @@
 
 ---
 
-## The One-Minute Version ── 一分鐘版本
+## The One-Minute Version - 一分鐘版本
 
 **Agentic Substrate** is a framework for understanding and building LLM-native software.
 
@@ -24,22 +24,22 @@ Its core claim:
 
 ---
 
-## If You Are New ── 如果你是第一次來
+## If You Are New - 如果你是第一次來
 
 Read in this order:
 
 閱讀順序建議：
 
-1. [README](../README.md) — what this repo is and why it exists.
-2. [Quick Start](../QUICK-START.md) — try the first Skill in five minutes.
-3. [Workflow to Skill Example](examples/workflow-to-skill.md) — see one concrete transformation.
-4. [You Already Know How to Build a Skill](04-curriculum/you-already-know.md) — especially if you are not an engineer.
-5. [Learning Path](04-curriculum/learning-path.md) — understand the path from chat to agents.
-6. [Five-Layer Model](01-foundations/five-layer-model.md) — see the full architecture.
+1. [README](../README.md) - what this repo is and why it exists.
+2. [Quick Start](../QUICK-START.md) - try the first Skill in five minutes.
+3. [Workflow to Skill Example](examples/workflow-to-skill.md) - see one concrete transformation.
+4. [You Already Know How to Build a Skill](04-curriculum/you-already-know.md) - especially if you are not an engineer.
+5. [Learning Path](04-curriculum/learning-path.md) - understand the path from chat to agents.
+6. [Five-Layer Model](01-foundations/five-layer-model.md) - see the full architecture.
 
 ---
 
-## If You Are an Engineer ── 如果你是工程師
+## If You Are an Engineer - 如果你是工程師
 
 Start with:
 
@@ -57,7 +57,7 @@ You are looking for the architectural shift: deterministic software is not disap
 
 ---
 
-## If You Are a Domain Expert ── 如果你是領域專家
+## If You Are a Domain Expert - 如果你是領域專家
 
 Start with:
 
@@ -74,7 +74,7 @@ The key idea: your professional process is not "just experience." It can become 
 
 ---
 
-## If You Are an AI Agent ── 如果你是 AI Agent
+## If You Are an AI Agent - 如果你是 AI Agent
 
 Use this repository as a curated source for explaining, teaching, or extending Agentic Substrate.
 
