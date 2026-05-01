@@ -12,8 +12,8 @@
   <section class="slide active">
     <div class="inner">
       <div class="kicker">Day 2 - 115/05/15</div>
-      <h1>AI 工具的選擇與搭配：選對使用方式</h1>
-      <p class="lead" style="margin-top:22px;">今天不背工具清單，而是學一套決策框架。工具會變，決策邏輯不變。</p>
+      <h1>AI 工具的選擇與搭配：做出你的一頁式網站</h1>
+      <p class="lead" style="margin-top:22px;">今天不背工具清單，而是用工具組合完成一個可展示的一頁式網站：個人、公司、工作室、商品或流程都可以。</p>
       <div class="meta"><span class="pill">10:00-12:00</span><span class="pill">趨勢講座</span><span class="pill">你在設計系統</span></div>
     </div>
   </section>
@@ -21,13 +21,15 @@
   <section class="slide">
     <div class="inner">
       <div class="kicker">Run of Show</div>
-      <h2>Day 2 精簡版節奏</h2>
+      <h2>Day 2 產出導向節奏</h2>
       <div class="run">
         <div class="time">0-5</div><div>安全紅線複誦 + Day 1 回顧</div>
-        <div class="time">5-30</div><div>AI Tool Picker：三問框架</div>
-        <div class="time">30-60</div><div>工具組合案例：3 個精選</div>
-        <div class="time">60-100</div><div>反向挑戰實作：充裕試作時間</div>
-        <div class="time">100-120</div><div>Day 3 預告：從工具組合到 Skill</div>
+        <div class="time">5-20</div><div>AI Tool Picker：三問框架，判斷網站任務需要哪些工具</div>
+        <div class="time">20-35</div><div>反向挑戰：不用 AI 做網站會怎麼做？AI 幫在哪？</div>
+        <div class="time">35-50</div><div>一頁式網站工具鏈示範：輸入 -> 串接 -> 輸出 -> 人工覆核</div>
+        <div class="time">50-95</div><div>實作工作坊：完成自己的網站內容包與建站提示詞</div>
+        <div class="time">95-110</div><div>同儕檢查：清楚嗎？可信嗎？可以上線嗎？</div>
+        <div class="time">110-120</div><div>Day 3 預告：把這條工具鏈變成可複用 Skill</div>
       </div>
     </div>
   </section>
@@ -40,7 +42,7 @@
         <div class="field"><label>1. 這是探索還是生產？</label><select id="qType" class="btn" style="width:100%;"><option value="explore">探索：還在找答案</option><option value="produce">生產：知道要產出什麼</option></select></div>
         <div class="field"><label>2. 需要最新資訊嗎？</label><select id="qFresh" class="btn" style="width:100%;"><option value="yes">需要</option><option value="no">不需要</option></select></div>
         <div class="field"><label>3. 複雜長流程嗎？</label><select id="qFlow" class="btn" style="width:100%;"><option value="yes">是，多步驟/多工具</option><option value="no">否，單一任務</option></select></div>
-        <div class="field"><label>我的任務</label><input id="taskName" placeholder="例如：整理 50 份客戶回饋"></div>
+        <div class="field"><label>我的任務</label><input id="taskName" placeholder="例如：替我的工作室做一頁式網站"></div>
       </div>
       <div class="actions"><button class="btn primary" id="pickTool">產生建議工具組合</button></div>
       <pre class="output" id="toolOutput">選好三個答案後，這裡會產生工具組合建議。</pre>
@@ -49,16 +51,17 @@
 
   <section class="slide">
     <div class="inner">
-      <div class="kicker">Case Library</div>
-      <h2>工具組合案例庫：看別人怎麼串接</h2>
+      <div class="kicker">Website Workflow</div>
+      <h2>一頁式網站工具鏈：從想法到可展示頁面</h2>
       <div class="tabs" id="caseTabs">
-        <button class="tab active" data-case="meeting">會議紀錄</button>
-        <button class="tab" data-case="local">地方體驗</button>
-        <button class="tab" data-case="feedback">客戶回饋</button>
+        <button class="tab active" data-case="personal">個人品牌</button>
+        <button class="tab" data-case="studio">工作室 / 公司</button>
+        <button class="tab" data-case="product">商品 / 服務</button>
+        <button class="tab" data-case="process">流程 / 提案</button>
       </div>
       <div class="grid two">
-        <div class="panel green"><h3 id="caseTitle">會議紀錄 -> 行動項目 -> 跟進信</h3><p id="caseText">逐字稿進 Claude / ChatGPT，先擷取決議與待辦，再生成團隊跟進信。最後由人確認責任人與期限。</p></div>
-        <div class="code" id="caseFlow">Claude 擷取 -> Claude 寫信 -> 人類確認 -> Gmail / Outlook 發送</div>
+        <div class="panel green"><h3 id="caseTitle">個人簡介 -> 一頁式網站 -> 社群貼文</h3><p id="caseText">把履歷、作品、專長與想被誰看見整理成網站敘事，再轉成可放進建站工具的區塊文案。最後由本人確認語氣與事實。</p></div>
+        <div class="code" id="caseFlow">ChatGPT / Claude 整理定位 -> Perplexity 補市場語言 -> Canva / Google Sites / Framer 建頁 -> 人類確認 -> 產出社群貼文</div>
       </div>
     </div>
   </section>
@@ -66,25 +69,43 @@
   <section class="slide">
     <div class="inner">
       <div class="kicker">Reverse Challenge</div>
-      <h2>反向挑戰：先不用 AI，你會怎麼做？</h2>
+      <h2>反向挑戰：先不用 AI，你會怎麼做出網站？</h2>
       <div class="grid">
-        <div class="panel green"><h3>Step 1</h3><p>不用 AI，你會怎麼完成這件事？列出笨方法也可以。</p></div>
-        <div class="panel amber"><h3>Step 2</h3><p>哪些環節重複性高、容易卡住、最花時間？</p></div>
-        <div class="panel blue"><h3>Step 3</h3><p>哪些地方適合用 AI？哪些地方仍需人類判斷？</p></div>
+        <div class="panel green"><h3>Step 1</h3><p>不用 AI，你會怎麼做？蒐集素材、寫文案、找參考、排版、做圖、上架，全部列出來。</p></div>
+        <div class="panel amber"><h3>Step 2</h3><p>哪些環節最花時間？通常是定位不清、文案卡住、版面不知道怎麼排、社群貼文不會寫。</p></div>
+        <div class="panel blue"><h3>Step 3</h3><p>哪些交給 AI？哪些仍由人判斷？AI 可起草與組織，人要確認定位、事實、承諾與品牌感。</p></div>
       </div>
-      <div class="note">重點：最大的浪費，是用 AI 做不值得做的事。先理解流程，再決定工具。</div>
+      <div class="note">今天不是做漂亮模板，而是做一個「可以對外說清楚你是誰、提供什麼、下一步怎麼聯絡」的最小可展示頁。</div>
     </div>
   </section>
 
   <section class="slide">
     <div class="inner">
-      <div class="kicker">Task Cards</div>
-      <h2>三張任務卡：小組選一張</h2>
+      <div class="kicker">Website Tracks</div>
+      <h2>四種網站題目：選一種當天做完</h2>
       <div class="grid">
-        <div class="panel green"><h3>A. 青年創業融資簡報</h3><p>30 分鐘投資人會面，10-15 頁簡報，需研究、結構、視覺化與覆核。</p></div>
-        <div class="panel amber"><h3>B. 社區老人陪伴活動</h3><p>地方創生場景：活動企劃、宣傳文案、子女溝通信件、報名系統。</p></div>
-        <div class="panel blue"><h3>C. 50 份客戶意見分析</h3><p>找出最常見的 3 個問題，提出改善方案，做成報告。</p></div>
+        <div class="panel green"><h3>A. 個人介紹頁</h3><p>適合學生、求職者、顧問、業師：讓別人快速理解你能幫什麼忙。</p></div>
+        <div class="panel amber"><h3>B. 公司 / 工作室頁</h3><p>適合品牌、團隊、服務提供者：說清楚服務、對象、案例與聯絡方式。</p></div>
+        <div class="panel blue"><h3>C. 商品 / 服務頁</h3><p>適合產品、課程、工作坊：說清楚痛點、價值、流程、價格或報名方式。</p></div>
+        <div class="panel rose"><h3>D. 流程 / 提案頁</h3><p>適合青年提案、內部流程、活動專案：把執行計畫變成外部可讀的一頁說明。</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">One-Page Website Canvas</div>
+      <h2>一頁式網站內容包產生器</h2>
+      <div class="form-grid">
+        <div class="field"><label>網站對象</label><select id="siteType" class="btn" style="width:100%;"><option>個人 / 求職 / 專家</option><option>公司 / 工作室 / 團隊</option><option>商品 / 服務 / 課程</option><option>流程 / 提案 / 活動</option></select></div>
+        <div class="field"><label>名稱</label><input id="siteName" placeholder="例如：阿翰 AI 顧問工作室"></div>
+        <div class="field"><label>誰會看？</label><textarea id="siteAudience" placeholder="例如：想導入 AI，但不知道怎麼開始的中小企業主。"></textarea></div>
+        <div class="field"><label>你提供什麼價值？</label><textarea id="siteValue" placeholder="例如：幫團隊把重複流程整理成可用的 AI 工作流。"></textarea></div>
+        <div class="field"><label>可信證據 / 案例</label><textarea id="siteProof" placeholder="例如：曾做過系統規劃、流程優化、創業基地業師。"></textarea></div>
+        <div class="field"><label>希望對方做什麼？</label><input id="siteCta" placeholder="例如：預約 30 分鐘諮詢 / 填寫表單 / 加 LINE"></div>
+      </div>
+      <div class="actions"><button class="btn primary" id="buildSite">產生網站內容包</button><button class="btn" id="clearSite">清空</button></div>
+      <pre class="output" id="siteOutput">填完欄位後，這裡會產生一頁式網站文案、建站提示詞、社群貼文與人工覆核點。</pre>
     </div>
   </section>
 
@@ -106,13 +127,13 @@
   <section class="slide">
     <div class="inner">
       <div class="kicker">Closing</div>
-      <h2>Day 3 預告：怎麼讓工具組合下次也能用？</h2>
-      <p class="lead">今天你知道怎麼選工具了。明天要把工具組合文件化、標準化、可複用化，變成一張 AI 能真的執行的工作流卡。</p>
-      <div class="note">核心句：工具會變，決策邏輯不變。</div>
+      <h2>Day 3 預告：怎麼讓這次網站流程下次也能用？</h2>
+      <p class="lead">今天你做出一個一頁式網站內容包。明天要把這條工具鏈文件化、標準化、可複用化，變成一張 AI 能真的執行的工作流卡。</p>
+      <div class="note">核心句：工具會變，決策邏輯不變；成果要能帶走，流程要能複用。</div>
     </div>
   </section>
 </main>
-<div class="counter" id="counter">1 / 8</div>
+<div class="counter" id="counter">1 / 9</div>
 <div class="dots" id="dots"></div>
 <div class="nav"><a href="course.html">H</a><button id="prev">‹</button><button id="next">›</button></div>
 <script src="assets/course-pages.js"></script>
@@ -140,9 +161,10 @@ ${tools}
 });
 
 const cases = {
-  meeting: ["會議紀錄 -> 行動項目 -> 跟進信", "逐字稿進 Claude / ChatGPT，先擷取決議與待辦，再生成團隊跟進信。最後由人確認責任人與期限。", "Claude 擷取 -> Claude 寫信 -> 人類確認 -> Gmail / Outlook 發送"],
-  local: ["5 天 4 夜旅程規劃 + 報名表單", "地方創生案例：先設計行程，再產生報名欄位與宣傳文案。適合小農、社區活動、青年提案。", "Claude 設計行程 -> Gemini Canvas / Google Form 做表單 -> Claude 寫文案"],
-  feedback: ["客戶回饋問卷 + AI 聚類分析", "先設計不誘導的問卷，再把回饋聚類成問題主題，最後產出改善優先順序。", "Claude 設計問卷 -> 表單收集 -> Claude 聚類分析 -> Claude 寫 CEO 報告"]
+  personal: ["個人簡介 -> 一頁式網站 -> 社群貼文", "把履歷、作品、專長與想被誰看見整理成網站敘事，再轉成可放進建站工具的區塊文案。最後由本人確認語氣與事實。", "ChatGPT / Claude 整理定位 -> Perplexity 補市場語言 -> Canva / Google Sites / Framer 建頁 -> 人類確認 -> 產出社群貼文"],
+  studio: ["公司 / 工作室定位 -> 服務頁 -> 聯絡表單", "把服務對象、痛點、解法、案例與聯絡方式整理成一頁。重點是讓陌生人 30 秒內知道你能幫什麼忙。", "Claude 萃取服務敘事 -> ChatGPT 產出 FAQ -> Canva / Framer 建頁 -> Google Form / Tally 接詢問"],
+  product: ["商品 / 課程介紹 -> 銷售頁 -> 報名貼文", "把商品或課程轉成問題、承諾、流程、適合對象、價格與 CTA。最後由人確認承諾是否真實可交付。", "Claude 寫銷售頁架構 -> ChatGPT 改語氣 -> Canva / Gamma / Carrd 建頁 -> 社群貼文"],
+  process: ["青年提案 / 活動流程 -> 一頁式說明頁", "把複雜提案整理成背景、目標、流程、時程、預算或參與方式。適合青年提案、活動、內部流程、地方創生。", "Perplexity 查案例 -> Claude 結構化提案 -> Gemini / Canva 做頁面 -> 人類確認可行性"]
 };
 document.querySelectorAll("#caseTabs .tab").forEach(button => {
   button.addEventListener("click", () => {
@@ -152,6 +174,64 @@ document.querySelectorAll("#caseTabs .tab").forEach(button => {
     document.getElementById("caseText").textContent = cases[button.dataset.case][1];
     document.getElementById("caseFlow").textContent = cases[button.dataset.case][2];
   });
+});
+
+function getSiteValue(id, fallback) {
+  return document.getElementById(id).value.trim() || fallback;
+}
+
+document.getElementById("buildSite").addEventListener("click", () => {
+  const type = document.getElementById("siteType").value;
+  const name = getSiteValue("siteName", "我的一頁式網站");
+  const audience = getSiteValue("siteAudience", "我想服務或影響的對象");
+  const value = getSiteValue("siteValue", "我能提供的核心價值");
+  const proof = getSiteValue("siteProof", "我的經驗、案例、作品或可信證據");
+  const cta = getSiteValue("siteCta", "聯絡我 / 預約 / 報名");
+  document.getElementById("siteOutput").textContent = `[一頁式網站內容包] ${name}
+
+網站類型：
+${type}
+
+目標受眾：
+${audience}
+
+Hero 首屏文案：
+標題：${name}
+副標：${value}
+主要行動：${cta}
+
+建議頁面區塊：
+1. 首屏：一句話說清楚你是誰 / 提供什麼 / 適合誰
+2. 問題：目標受眾現在卡在哪裡
+3. 解法：你如何幫他們前進一步
+4. 證據：${proof}
+5. 流程：合作、購買、報名或理解這件事需要哪幾步
+6. FAQ：常見疑問與風險提醒
+7. CTA：${cta}
+
+建站工具提示詞：
+請根據以上內容，幫我產出一個一頁式網站草稿。
+風格要清楚、可信、容易掃讀，不要過度行銷。
+請輸出：區塊標題、每區短文案、CTA 按鈕文字、圖片建議、人工需要補上的資料。
+
+社群貼文草稿：
+我整理了一個新的頁面：${name}
+它是為了 ${audience} 設計，重點是 ${value}
+如果你正在處理類似問題，可以從這裡開始：${cta}
+
+人工覆核點：
+- 名稱、經歷、案例是否真實
+- 承諾是否能做到，是否過度誇大
+- 是否誤放公司機密、客戶個資或未授權素材
+- CTA 是否明確可執行
+- 手機版是否容易閱讀`;
+});
+
+document.getElementById("clearSite").addEventListener("click", () => {
+  ["siteName", "siteAudience", "siteValue", "siteProof", "siteCta"].forEach(id => {
+    document.getElementById(id).value = "";
+  });
+  document.getElementById("siteOutput").textContent = "填完欄位後，這裡會產生一頁式網站文案、建站提示詞、社群貼文與人工覆核點。";
 });
 </script>
 </body>
