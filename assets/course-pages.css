@@ -30,6 +30,10 @@ a { color: inherit; }
   inset: 0;
   display: none;
   padding: 70px clamp(24px, 5vw, 76px) 60px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-padding: 72px 0 88px;
 }
 .slide.active { display: flex; animation: enter 0.25s ease; }
 @keyframes enter {
@@ -139,6 +143,15 @@ p, li { color: var(--muted); font-size: clamp(15px, 1.35vw, 19px); line-height: 
   color: #425650;
   font-size: 15px;
   line-height: 1.7;
+}
+.diagram {
+  width: 100%;
+  max-height: 68vh;
+  object-fit: contain;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
 }
 .code {
   white-space: pre-wrap;

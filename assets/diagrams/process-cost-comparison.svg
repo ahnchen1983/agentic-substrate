@@ -1,0 +1,47 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#F7FAF8"/>
+  <text x="80" y="82" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="42" font-weight="800">同一任務，三種做法</text>
+  <text x="80" y="124" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22">重點不是哪個最快，而是誰建立結構、能不能複用、能不能檢查。</text>
+
+  <g transform="translate(72 180)">
+    <rect x="0" y="0" width="328" height="460" rx="20" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <rect x="0" y="0" width="328" height="80" rx="20" fill="#FFF5DF"/>
+    <text x="28" y="50" fill="#D9911F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">傳統做法</text>
+    <text x="28" y="128" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">你在做事</text>
+    <text x="28" y="176" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">搜尋範例</text>
+    <text x="28" y="216" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">Word 寫文案</text>
+    <text x="28" y="256" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">Excel 做預算</text>
+    <text x="28" y="296" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">Google Form 建表單</text>
+    <text x="28" y="336" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">Canva 做海報</text>
+    <text x="28" y="396" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">耗時：3-4 小時</text>
+    <text x="28" y="430" fill="#BD4D68" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">每次都要重新整合</text>
+  </g>
+
+  <g transform="translate(436 180)">
+    <rect x="0" y="0" width="328" height="460" rx="20" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <rect x="0" y="0" width="328" height="80" rx="20" fill="#E8F6F1"/>
+    <text x="28" y="50" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">單一 ChatGPT</text>
+    <text x="28" y="128" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">你在跟 AI 聊天</text>
+    <text x="28" y="176" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">一次 Prompt</text>
+    <text x="28" y="216" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">得到企劃概況</text>
+    <text x="28" y="256" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">再人工驗證數字</text>
+    <text x="28" y="296" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">複製到各工具</text>
+    <text x="28" y="396" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">耗時：約 30 分鐘</text>
+    <text x="28" y="430" fill="#D9911F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">結構通用，仍要搬運</text>
+  </g>
+
+  <g transform="translate(800 180)">
+    <rect x="0" y="0" width="328" height="460" rx="20" fill="#10201C" stroke="#1AA38B" stroke-width="2"/>
+    <rect x="0" y="0" width="328" height="80" rx="20" fill="#12372F"/>
+    <text x="28" y="50" fill="#92F2DD" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">Agent 工作流</text>
+    <text x="28" y="128" fill="#FFFFFF" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">你在設計系統</text>
+    <text x="28" y="176" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">查最新資料</text>
+    <text x="28" y="216" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">產企劃與預算</text>
+    <text x="28" y="256" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">生海報、建表單</text>
+    <text x="28" y="296" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">每一步設檢查點</text>
+    <text x="28" y="396" fill="#FFFFFF" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">耗時：約 45 分鐘</text>
+    <text x="28" y="430" fill="#92F2DD" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">流程可複用，可迭代</text>
+  </g>
+
+  <text x="80" y="705" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="26" font-weight="800">課堂金句：從「我在做事」到「我在設計一個會幫我工作的系統」。</text>
+</svg>

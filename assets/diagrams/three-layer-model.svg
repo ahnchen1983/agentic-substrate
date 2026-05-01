@@ -1,0 +1,40 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#F7FAF8"/>
+  <text x="80" y="86" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="42" font-weight="800">AI 三層簡化模型</text>
+  <text x="80" y="128" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22">從「會回答」到「會協作」，中間差的是工具與流程。</text>
+
+  <g transform="translate(140 184)">
+    <rect x="0" y="0" width="920" height="140" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <rect x="0" y="0" width="180" height="140" rx="18" fill="#E8F6F1"/>
+    <text x="72" y="82" text-anchor="middle" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">大腦</text>
+    <text x="226" y="54" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="32" font-weight="800">LLM</text>
+    <text x="226" y="94" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22">理解、推理、寫作、生成內容。很聰明，但沒有工具就只能「想」。</text>
+  </g>
+
+  <path d="M600 342 L600 394" stroke="#0F8F73" stroke-width="5" stroke-linecap="round"/>
+  <path d="M584 378 L600 397 L616 378" stroke="#0F8F73" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(140 410)">
+    <rect x="0" y="0" width="920" height="140" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <rect x="0" y="0" width="180" height="140" rx="18" fill="#FFF5DF"/>
+    <text x="72" y="82" text-anchor="middle" fill="#D9911F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">手腳</text>
+    <text x="226" y="54" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="32" font-weight="800">Tools / Agents</text>
+    <text x="226" y="94" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22">查網頁、讀檔案、畫圖、建表單、串接系統。讓 AI 從回答走向行動。</text>
+  </g>
+
+  <path d="M600 568 L600 620" stroke="#0F8F73" stroke-width="5" stroke-linecap="round"/>
+  <path d="M584 604 L600 623 L616 604" stroke="#0F8F73" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(140 636)">
+    <rect x="0" y="0" width="920" height="92" rx="18" fill="#10201C" stroke="#1AA38B" stroke-width="2"/>
+    <text x="90" y="57" text-anchor="middle" fill="#92F2DD" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">肌肉記憶</text>
+    <text x="226" y="38" fill="#FFFFFF" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="30" font-weight="800">Workflow / Skill</text>
+    <text x="226" y="70" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="21">照你的方式一步步做，知道順序、工具、品質標準與檢查點。</text>
+  </g>
+
+  <g transform="translate(806 54)">
+    <rect x="0" y="0" width="300" height="96" rx="18" fill="#FFFFFF" stroke="#D8E4DF"/>
+    <text x="24" y="38" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18" font-weight="800">講師口訣</text>
+    <text x="24" y="70" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="700">大腦 + 手腳 + 肌肉記憶</text>
+  </g>
+</svg>

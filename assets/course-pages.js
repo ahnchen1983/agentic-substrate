@@ -16,6 +16,10 @@ if (dots) {
 function show(index) {
   current = Math.max(0, Math.min(slides.length - 1, index));
   slides.forEach((slide, i) => slide.classList.toggle("active", i === current));
+  if (slides[current]) {
+    slides[current].scrollTop = 0;
+    slides[current].scrollLeft = 0;
+  }
   if (dots) dots.querySelectorAll(".dot").forEach((dot, i) => dot.classList.toggle("active", i === current));
   if (counter) counter.textContent = (current + 1) + " / " + slides.length;
 }
@@ -23,13 +27,27 @@ function show(index) {
 document.getElementById("prev")?.addEventListener("click", () => show(current - 1));
 document.getElementById("next")?.addEventListener("click", () => show(current + 1));
 document.addEventListener("keydown", event => {
-  if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") {
-    if (event.target && ["TEXTAREA", "INPUT"].includes(event.target.tagName)) return;
+  if (event.target && ["TEXTAREA", "INPUT"].includes(event.target.tagName)) return;
+  const activeSlide = slides[current];
+  const canScroll = activeSlide && activeSlide.scrollHeight > activeSlide.clientHeight + 2;
+  const atTop = !activeSlide || activeSlide.scrollTop <= 2;
+  const atBottom = !activeSlide || activeSlide.scrollTop + activeSlide.clientHeight >= activeSlide.scrollHeight - 2;
+
+  if ((event.key === "PageDown" || event.key === " ") && canScroll && !atBottom) {
+    event.preventDefault();
+    activeSlide.scrollBy({ top: activeSlide.clientHeight * 0.82, behavior: "smooth" });
+    return;
+  }
+  if (event.key === "PageUp" && canScroll && !atTop) {
+    event.preventDefault();
+    activeSlide.scrollBy({ top: activeSlide.clientHeight * -0.82, behavior: "smooth" });
+    return;
+  }
+  if (event.key === "ArrowRight" || ((event.key === "PageDown" || event.key === " ") && (!canScroll || atBottom))) {
     event.preventDefault();
     show(current + 1);
   }
-  if (event.key === "ArrowLeft" || event.key === "PageUp") {
-    if (event.target && ["TEXTAREA", "INPUT"].includes(event.target.tagName)) return;
+  if (event.key === "ArrowLeft" || (event.key === "PageUp" && (!canScroll || atTop))) {
     event.preventDefault();
     show(current - 1);
   }

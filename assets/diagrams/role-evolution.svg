@@ -1,0 +1,44 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="640" rx="28" fill="#F7FAF8"/>
+  <text x="80" y="86" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="42" font-weight="800">你的角色演進</text>
+  <text x="80" y="128" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22">AI 越會做事，你越需要從操作者變成設計者。</text>
+
+  <g transform="translate(74 230)">
+    <rect x="0" y="0" width="230" height="220" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <circle cx="52" cy="58" r="24" fill="#FFF5DF"/>
+    <text x="92" y="66" fill="#D9911F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">搜尋時代</text>
+    <text x="28" y="118" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="30" font-weight="800">研究員</text>
+    <text x="28" y="160" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="19">Google 給連結，</text>
+    <text x="28" y="190" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="19">你自己讀。</text>
+  </g>
+
+  <path d="M326 338 H392" stroke="#0F8F73" stroke-width="5" stroke-linecap="round"/>
+  <path d="M374 322 L394 338 L374 354" stroke="#0F8F73" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(416 230)">
+    <rect x="0" y="0" width="230" height="220" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <circle cx="52" cy="58" r="24" fill="#E8F6F1"/>
+    <text x="92" y="66" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">聊天時代</text>
+    <text x="28" y="118" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="30" font-weight="800">編輯</text>
+    <text x="28" y="160" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="19">AI 回答問題，</text>
+    <text x="28" y="190" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="19">你追問與修正。</text>
+  </g>
+
+  <path d="M668 338 H734" stroke="#0F8F73" stroke-width="5" stroke-linecap="round"/>
+  <path d="M716 322 L736 338 L716 354" stroke="#0F8F73" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(758 230)">
+    <rect x="0" y="0" width="230" height="220" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <circle cx="52" cy="58" r="24" fill="#E8EDFF"/>
+    <text x="92" y="66" fill="#4267D5" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="24" font-weight="800">產出時代</text>
+    <text x="28" y="118" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="30" font-weight="800">方向設定者</text>
+    <text x="28" y="160" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="19">你設定目標，</text>
+    <text x="28" y="190" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="19">AI 產出初稿。</text>
+  </g>
+
+  <g transform="translate(416 500)">
+    <rect x="0" y="0" width="430" height="78" rx="18" fill="#10201C" stroke="#1AA38B" stroke-width="2"/>
+    <text x="30" y="48" fill="#FFFFFF" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="28" font-weight="800">下一步：系統設計者</text>
+    <text x="290" y="48" fill="#92F2DD" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="700">設計 Workflow / Skill</text>
+  </g>
+</svg>
