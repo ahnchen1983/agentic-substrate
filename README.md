@@ -53,6 +53,7 @@ If you have ever thought, "AI is useful, but I keep explaining the same work pro
 | Try your first Skill | [Quick Start](QUICK-START.md) |
 | See the architecture | [Five-Layer Model](docs/01-foundations/five-layer-model.md) |
 | Learn why Skills matter | [Skill Anatomy](docs/01-foundations/skill-anatomy.md) |
+| Help an AI agent understand itself | [Agent Education Layer](agent-education/README.md) |
 | Help an AI agent read this repo | [llms.txt](llms.txt) / [AGENTS.md](AGENTS.md) |
 
 | 如果你想要... | 從這裡開始 |
@@ -65,6 +66,7 @@ If you have ever thought, "AI is useful, but I keep explaining the same work pro
 | 立刻試第一個 Skill | [Quick Start](QUICK-START.md) |
 | 看完整架構 | [Five-Layer Model](docs/01-foundations/five-layer-model.md) |
 | 理解為什麼 Skill 重要 | [Skill Anatomy](docs/01-foundations/skill-anatomy.md) |
+| 讓 AI agent 理解自己的架構位置 | [Agent Education Layer](agent-education/README.md) |
 | 讓 AI agent 更容易讀懂本 repo | [llms.txt](llms.txt) / [AGENTS.md](AGENTS.md) |
 
 ---
@@ -111,6 +113,24 @@ Unlike frameworks built only for engineers, this is designed for **everyone who 
 
 ---
 
+## Two Reading Paths - 兩條閱讀路徑
+
+Agentic Substrate is designed to be read in two ways:
+
+Agentic Substrate 被設計成可以用兩種方式閱讀：
+
+- **Human-readable path**: concepts, examples, courses, and Skills that help people understand the shift from apps to agents.
+- **Agent-readable path**: operational protocols that help AI agents locate themselves in the stack, decide when to use tools, create Skills, validate results, and preserve reusable workflows.
+
+- **給人讀的路徑**：用概念、案例、課程與 Skills，幫助人理解從 App 到 Agent 的轉變。
+- **給 Agent 讀的路徑**：用操作協議，幫助 AI Agent 判斷自己在哪一層、何時使用工具、如何建立 Skill、如何驗證結果，以及什麼流程值得被保存。
+
+Start the agent-readable path here: [Agent Education Layer](agent-education/README.md)
+
+Agent 可讀路徑從這裡開始：[Agent Education Layer](agent-education/README.md)
+
+---
+
 ## Why Does This Exist? - 為什麼要做這個？
 
 We're living through a paradigm shift:
@@ -142,6 +162,11 @@ Agentic-Substrate/
 |-- README.md                          <-- You are here 你在這裡
 |-- llms.txt                           [published] AI-readable project map
 |-- AGENTS.md                          [published] Guidance for coding agents
+|-- agent-education/                   [published] Agent-facing operational protocols
+|   |-- README.md                      [published] Agent-readable entry point
+|   |-- self-model/                    [published] Five-layer self-location protocol
+|   |-- skill-system/                  [published] Skill creation protocol
+|   `-- tool-use/                      [published] Tool result validation protocol
 |-- course.html                        [published] Three-session interactive course
 |-- course-day1.html                   [published] Detailed Day 1 interactive course
 |-- course-day2.html                   [published] Detailed Day 2 interactive course

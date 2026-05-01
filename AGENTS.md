@@ -20,8 +20,21 @@ Start here:
 2. `docs/START-HERE.md` for routing by audience.
 3. `docs/01-foundations/agentic-substrate.md` for the core architecture.
 4. `docs/01-foundations/five-layer-model.md` for the layer model.
-5. `docs/04-curriculum/learning-path.md` for the educational path.
-6. `skills/` for installable, practical examples.
+5. `agent-education/README.md` for the agent-readable operational layer.
+6. `docs/04-curriculum/learning-path.md` for the educational path.
+7. `skills/` for installable, practical examples.
+
+## Agent Self-Model
+
+If you are using this repo to guide agent behavior rather than only editing the repo, read `agent-education/README.md` before acting.
+
+Before non-trivial work, identify:
+
+- Which layer you are operating in: LLM computation, tool/protocol, Skill, Agent, or interface.
+- Whether an existing Skill should be reused.
+- Whether tool use is required.
+- What validation level is needed.
+- Whether the workflow should become reusable documentation, memory, or a Skill.
 
 ## Writing Style
 
@@ -46,4 +59,3 @@ Be careful with:
 - Over-engineering the framework before the public narrative is clear.
 - Adding too many concepts to the README before the value proposition lands.
 - Removing the practical Skills, because they prove the framework is not only theory.
-
