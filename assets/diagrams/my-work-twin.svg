@@ -1,0 +1,54 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#F7FAF8"/>
+  <text x="74" y="82" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="40" font-weight="800">自己的工作型數位分身</text>
+  <text x="74" y="122" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="21">不是複製一個人，而是封裝你的工作方法，讓 AI 可以照你的方式協作。</text>
+
+  <g transform="translate(74 178)">
+    <rect x="0" y="0" width="240" height="188" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <rect x="0" y="0" width="240" height="52" rx="18" fill="#E8F6F1"/>
+    <text x="24" y="34" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20" font-weight="800">1. 我的材料</text>
+    <text x="24" y="86" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">工作痕跡</text>
+    <text x="24" y="122" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18">提案、會議紀錄</text>
+    <text x="24" y="152" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18">簡報、SOP、Email</text>
+  </g>
+
+  <path d="M338 272 H412" stroke="#0F8F73" stroke-width="5" stroke-linecap="round"/>
+  <path d="M394 256 L416 272 L394 288" stroke="#0F8F73" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(438 178)">
+    <rect x="0" y="0" width="294" height="188" rx="18" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <rect x="0" y="0" width="294" height="52" rx="18" fill="#FFF5DF"/>
+    <text x="24" y="34" fill="#D9911F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20" font-weight="800">2. 七問萃取</text>
+    <text x="24" y="86" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">把隱性經驗說清楚</text>
+    <text x="24" y="122" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18">任務邊界、輸入輸出</text>
+    <text x="24" y="152" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18">步驟、風險、檢查點</text>
+  </g>
+
+  <path d="M758 272 H832" stroke="#0F8F73" stroke-width="5" stroke-linecap="round"/>
+  <path d="M814 256 L836 272 L814 288" stroke="#0F8F73" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(858 178)">
+    <rect x="0" y="0" width="268" height="188" rx="18" fill="#10201C" stroke="#1AA38B" stroke-width="2"/>
+    <text x="24" y="42" fill="#92F2DD" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20" font-weight="800">3. Work Skill + Persona</text>
+    <text x="24" y="88" fill="#FFFFFF" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">我的工作型分身</text>
+    <text x="24" y="124" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18">會做什麼、怎麼判斷</text>
+    <text x="24" y="154" fill="#B8D4CC" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18">怎麼說、怎麼檢查</text>
+  </g>
+
+  <g transform="translate(180 462)">
+    <rect x="0" y="0" width="840" height="154" rx="22" fill="#FFFFFF" stroke="#D8E4DF" stroke-width="2"/>
+    <text x="36" y="48" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="26" font-weight="800">4. 每天協助工作</text>
+    <text x="36" y="90" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">寫初稿、整理會議、檢查品質、提醒風險、延伸版本。</text>
+    <text x="36" y="124" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="20">本人覆核重要輸出；分身協作，不替你承擔責任。</text>
+
+    <rect x="604" y="38" width="188" height="78" rx="14" fill="#ECF7F3" stroke="#CBE4DC"/>
+    <text x="628" y="70" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="18" font-weight="800">5. 迭代修正</text>
+    <text x="628" y="98" fill="#60706B" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="16">這不像我，再改一次</text>
+  </g>
+
+  <path d="M990 448 C1052 408 1068 320 1126 278" stroke="#D9911F" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10"/>
+  <path d="M1110 276 L1132 274 L1123 294" stroke="#D9911F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="74" y="698" fill="#0F8F73" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="800">講師收束：</text>
+  <text x="184" y="698" fill="#14211F" font-family="Arial, 'Noto Sans TC', sans-serif" font-size="22" font-weight="700">你不是在寫 prompt，你是在設計一個未來會幫你工作的自己。</text>
+</svg>

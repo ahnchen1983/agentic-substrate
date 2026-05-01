@@ -421,6 +421,15 @@
     font-size: 15px;
     line-height: 1.7;
   }
+  .diagram {
+    width: 100%;
+    max-height: 68vh;
+    object-fit: contain;
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+  }
   @media (max-width: 850px) {
     body { overflow: auto; }
     .deck { height: auto; min-height: 100vh; }
@@ -637,6 +646,38 @@
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="kicker">Case Study</div>
+      <h2>從同事.skill 到自己的工作型數位分身</h2>
+      <div class="grid two">
+        <div class="panel accent-green">
+          <h3>案例怎麼轉譯？</h3>
+          <p>dot-skill 的爆點，是把聊天、文件、PR、Email 等工作痕跡，萃取成可被 AI 調用的 Skill。課堂裡我們把角度改成自己：不是蒸餾別人，而是封裝自己的工作方法。</p>
+          <div class="note">數位分身負責協作，不負責替你承擔責任。</div>
+        </div>
+        <div class="panel">
+          <h3>自己的分身要學什麼？</h3>
+          <ul class="clean-list">
+            <li>我會做哪些工作，邊界在哪裡</li>
+            <li>我怎麼判斷優先順序與風險</li>
+            <li>我習慣輸出什麼格式與語氣</li>
+            <li>我會如何檢查品質並修正版本</li>
+          </ul>
+        </div>
+      </div>
+      <div class="meta"><a class="pill" href="https://github.com/titanwings/colleague-skill">參考案例：dot-skill</a><a class="pill" href="course-day3.html">Day 3 詳細互動頁</a></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="slide-inner">
+      <div class="kicker">Visual Model</div>
+      <h2>我的工作型數位分身怎麼形成？</h2>
+      <img class="diagram" src="assets/diagrams/my-work-twin.svg" alt="自己的工作型數位分身形成流程圖">
     </div>
   </section>
 
