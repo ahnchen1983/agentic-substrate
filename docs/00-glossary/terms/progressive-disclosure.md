@@ -41,9 +41,17 @@ TODO
 
 TODO
 
-## 範例
+## 情境例句
 
-TODO
+> 「Skill 文件為什麼不要一開始塞滿所有細節？」
+>
+> 「progressive disclosure 會先給 Agent 短指引，需要時再讀詳細參考，節省 context。」
+
+## 常見錯誤
+
+- 把所有文件一次塞進 context。
+- 短指引太空泛，Agent 不知道何時讀細節。
+- 詳細資料沒有清楚路徑。
 
 ## 相關術語
 

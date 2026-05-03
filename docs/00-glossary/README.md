@@ -47,7 +47,7 @@ Each term should eventually have its own page so that:
 | `maps/by-layer.md` | Draft | Layer-to-term map |
 | `maps/by-course-day.md` | Draft | Course-to-term map |
 | `maps/by-learning-stage.md` | Draft | Learning-stage-to-term map |
-| `terms/` | Planned | One page per term |
+| `terms/` | Seeded | One page per term, with scenario and common-mistake sections |
 
 ---
 
@@ -64,3 +64,22 @@ Instead:
 3. add missing terms to the registry;
 4. update maps only when course, layer, or learning-stage relationships change.
 
+---
+
+## Term Page Learning Pattern - 術語頁學習格式
+
+Each term page should eventually include:
+
+- a short definition;
+- what not to confuse it with;
+- why it matters;
+- where it sits in the five-layer model;
+- where it appears in the course;
+- what an agent should watch for;
+- a dialogue-style scenario;
+- common mistakes;
+- related terms.
+
+The scenario is important. A term becomes easier to learn when readers can hear how it appears in real work.
+
+情境例句很重要。術語一旦被放進真實工作對話裡，讀者就比較容易知道它到底怎麼用。

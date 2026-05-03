@@ -41,9 +41,17 @@ TODO
 
 TODO
 
-## 範例
+## 情境例句
 
-TODO
+> 「口頭交接很容易漏，那要留下什麼？」
+>
+> 「留下 handoff artifact，例如 summary、decision log、任務清單或可讀的 markdown 狀態檔。」
+
+## 常見錯誤
+
+- 把 handoff artifact 寫成流水帳。
+- 沒有標明下一步和阻塞點。
+- 沒有放在下一個 Agent 會讀的位置。
 
 ## 相關術語
 

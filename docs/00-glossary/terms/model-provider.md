@@ -41,9 +41,17 @@ TODO
 
 TODO
 
-## 範例
+## 情境例句
 
-TODO
+> 「OpenAI、Anthropic、Google 差在哪？」
+>
+> 「它們都是 model provider，提供模型、API、計費、政策和工具能力。選擇時不能只看模型名稱。」
+
+## 常見錯誤
+
+- 把 provider 等同單一模型。
+- 忽略資料政策和企業合規。
+- 沒有比較 API、工具、價格與可用區域。
 
 ## 相關術語
 

@@ -41,9 +41,17 @@ TODO
 
 TODO
 
-## 範例
+## 情境例句
 
-TODO
+> 「AI 要怎麼知道 GitHub Actions 錯在哪？」
+>
+> 「它需要 tool，例如讀 log、查檔案、跑測試或呼叫 GitHub API。」
+
+## 常見錯誤
+
+- 把 tool 和 Agent 混在一起。
+- 沒有確認工具權限和輸出。
+- 期待模型憑空知道外部狀態。
 
 ## 相關術語
 

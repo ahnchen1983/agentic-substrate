@@ -41,9 +41,17 @@ TODO
 
 TODO
 
-## 範例
+## 情境例句
 
-TODO
+> 「我改完課程頁後，怎麼知道連結沒壞？」
+>
+> 「可以用 automated check：例如檢查 markdown link、frontmatter、格式或建置流程。」
+
+## 常見錯誤
+
+- 把 automated check 當成內容審稿。
+- 只跑格式檢查，沒有跑行為或連結檢查。
+- 檢查失敗時直接忽略。
 
 ## 相關術語
 

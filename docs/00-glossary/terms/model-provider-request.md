@@ -41,9 +41,17 @@ TODO
 
 TODO
 
-## 範例
+## 情境例句
 
-TODO
+> 「一次 API 請求裡到底送了什麼？」
+>
+> 「model provider request 可能包含 prompt、system message、工具 schema、上下文、參數和安全設定。」
+
+## 常見錯誤
+
+- 只看使用者輸入，忽略系統與工具資訊。
+- 把 request log 暴露給不該看的人。
+- 沒有記錄參數，導致結果難以重現。
 
 ## 相關術語
 

@@ -108,7 +108,9 @@ status: draft | reviewed | stable
 
 ## Agent 需要注意什麼
 
-## 範例
+## 情境例句
+
+## 常見錯誤
 
 ## 相關術語
 ```
@@ -252,6 +254,8 @@ Validation:
 - Each core term explains "not the same as".
 - Each core term maps to the five-layer model.
 - Each core term includes one concrete example.
+- Each core term includes one dialogue-style scenario.
+- Each core term includes common mistakes learners or agents make.
 - No source text is copied.
 
 ### Phase 4: Connect to Existing Learning Content
