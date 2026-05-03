@@ -9,37 +9,34 @@ learning_stages: [level3, level4]
 related_terms: [handoff, spec, ticket, skill]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Handoff artifact - 交接產物
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Handoff artifact 是承載交接資訊的具體文件或資料，例如 summary、decision log、狀態檔或任務清單。
 
 ## 不要誤會成
 
-TODO
+它不是一般聊天紀錄，也不是事後回憶。
 
 ## 為什麼重要
 
-TODO
+它讓下一個 Agent 可以不靠原對話，也能接住工作脈絡。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L3 Skill 與可重複工作流層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+要放在可被找到的位置，內容要短、準、可執行，並標出下一步與阻塞點。
 
 ## 情境例句
 
@@ -55,4 +52,7 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Handoff](handoff.md)
+- [Spec](spec.md)
+- [Ticket](ticket.md)
+- [Skill](skill.md)

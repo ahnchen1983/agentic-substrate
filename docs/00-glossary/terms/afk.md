@@ -9,37 +9,34 @@ learning_stages: [level4]
 related_terms: [agent, permission-mode, automated-review]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # AFK - 離開鍵盤
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+AFK 是讓 Agent 在人暫時離開時繼續執行一段受控任務的工作模式。
 
 ## 不要誤會成
 
-TODO
+AFK 不是完全放手不管，也不是讓 Agent 擁有無限制權限。
 
 ## 為什麼重要
 
-TODO
+它代表 AI 工作從即時聊天走向背景執行，但也更需要邊界、檢查點與回報機制。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+只在低風險、可驗證、可中止的任務上採用 AFK；涉及外部發布、金錢、刪除或敏感資料時要要求人類確認。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Agent](agent.md)
+- [Permission Mode](permission-mode.md)
+- [Automated Review](automated-review.md)

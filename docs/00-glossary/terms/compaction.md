@@ -9,37 +9,34 @@ learning_stages: [level4]
 related_terms: [context-window, session, autocompact, memory-system]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Compaction - 壓縮
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Compaction 是把長對話或大量資訊壓縮成較短摘要，以便放回 context window 的過程。
 
 ## 不要誤會成
 
-TODO
+它不是完整原文，也不是保證無損的記憶系統。
 
 ## 為什麼重要
 
-TODO
+它讓長任務可以延續，但也可能造成細節遺失或錯誤簡化。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+壓縮摘要要包含目標、已完成事項、決策理由、待辦、風險和不可更動的使用者變更。
 
 ## 情境例句
 
@@ -55,4 +52,7 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Context Window](context-window.md)
+- [Session](session.md)
+- [Autocompact](autocompact.md)
+- [Memory System](memory-system.md)

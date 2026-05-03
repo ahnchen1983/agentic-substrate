@@ -9,37 +9,34 @@ learning_stages: [level1, level4]
 related_terms: [context, parametric-knowledge, memory-system]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Contextual knowledge - 脈絡知識
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Contextual knowledge 是模型在當前任務中透過 context 臨時取得的知識。
 
 ## 不要誤會成
 
-TODO
+它不是模型原本就知道的 parametric knowledge，也不保證下次 session 還在。
 
 ## 為什麼重要
 
-TODO
+它讓 Agent 能理解特定 repo、課程、客戶或專案，但需要被正確載入與維護。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+遇到專案特定內容時，要優先讀取 repo 文件或使用者提供資料，不要只靠內建知識猜。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Context](context.md)
+- [Parametric Knowledge](parametric-knowledge.md)
+- [Memory System](memory-system.md)

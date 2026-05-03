@@ -9,37 +9,34 @@ learning_stages: [level2, level4]
 related_terms: [environment, permission-mode, tool-call]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Sandbox - 沙盒
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Sandbox 是限制 Agent 執行範圍的安全環境，例如檔案、網路或命令權限。
 
 ## 不要誤會成
 
-TODO
+它不是錯誤狀態，也不是模型本身的限制。
 
 ## 為什麼重要
 
-TODO
+它讓 AI 能執行工具，同時降低誤刪、外洩或破壞系統的風險。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L2 工具與環境層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+遇到權限失敗時要判斷是否真的需要升權，並向使用者說明風險與目的。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Environment](environment.md)
+- [Permission Mode](permission-mode.md)
+- [Tool Call](tool-call.md)

@@ -9,37 +9,34 @@ learning_stages: [level4]
 related_terms: [compaction, context-window, memory-system]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Autocompact - 自動壓縮
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Autocompact 是系統在對話過長時自動壓縮上下文，讓 session 可以繼續運作的機制。
 
 ## 不要誤會成
 
-TODO
+它不是完整備份，也不是無損記憶。
 
 ## 為什麼重要
 
-TODO
+它能延長工作時間，但可能丟失細節、語氣、例外條件和未寫入檔案的決策。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+重要決策要寫回 repo 或 handoff artifact；壓縮後要重新檢查關鍵假設是否還存在。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Compaction](compaction.md)
+- [Context Window](context-window.md)
+- [Memory System](memory-system.md)

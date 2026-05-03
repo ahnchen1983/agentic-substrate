@@ -9,37 +9,34 @@ learning_stages: [level1]
 related_terms: [model, training, parametric-knowledge]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Parameters - 參數
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Parameters 是模型內部經訓練得到的權重數值，影響模型如何處理輸入與產生輸出。
 
 ## 不要誤會成
 
-TODO
+它不是 prompt 參數，也不是 context window 大小。
 
 ## 為什麼重要
 
-TODO
+參數量常被用來描述模型規模，但不能單獨代表產品品質。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+比較模型時不要只看參數量，也要看任務、速度、成本、工具支援和驗證結果。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Model](model.md)
+- [Training](training.md)
+- [Parametric Knowledge](parametric-knowledge.md)

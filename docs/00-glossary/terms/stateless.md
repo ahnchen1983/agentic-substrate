@@ -9,37 +9,34 @@ learning_stages: [level1, level4]
 related_terms: [stateful, session, memory-system]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Stateless - 無狀態
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Stateless 指每次請求基本上獨立，系統不自動保留先前完整狀態。
 
 ## 不要誤會成
 
-TODO
+它不是不能做長任務，而是需要把必要狀態明確帶入。
 
 ## 為什麼重要
 
-TODO
+API、工具呼叫和某些 agent step 常是 stateless，這會影響 workflow 設計。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+每次呼叫要提供必要 context，並把中間狀態寫到可持久的位置。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Stateful](stateful.md)
+- [Session](session.md)
+- [Memory System](memory-system.md)

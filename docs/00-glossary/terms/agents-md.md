@@ -9,37 +9,34 @@ learning_stages: [level4]
 related_terms: [memory-system, system-prompt, progressive-disclosure]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # AGENTS.md - AGENTS.md
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+AGENTS.md 是放在 repo 裡，讓 Agent 讀取專案規則、工作慣例和安全邊界的指引文件。
 
 ## 不要誤會成
 
-TODO
+它不是 README 的替代品，也不是把所有背景資料塞進一個檔案。
 
 ## 為什麼重要
 
-TODO
+它讓 Agent 不依賴對話歷史，也能在新 session 中重建基本工作方式。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+讀到 AGENTS.md 後要遵守其中的 coding、testing、commit、permission 和文件規則；若規則與使用者最新指令衝突，要說明並確認。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Memory System](memory-system.md)
+- [System Prompt](system-prompt.md)
+- [Progressive Disclosure](progressive-disclosure.md)

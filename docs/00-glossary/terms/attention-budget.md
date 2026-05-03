@@ -9,37 +9,34 @@ learning_stages: [level1, level4]
 related_terms: [context-window, attention-degradation, smart-zone]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Attention budget - 注意力預算
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Attention budget 是模型在有限 context 中能有效關注資訊的注意力資源。
 
 ## 不要誤會成
 
-TODO
+它不是 token 數的同義詞；context 放得下，不代表模型都會用得好。
 
 ## 為什麼重要
 
-TODO
+長文件、長對話和大量工具結果會競爭注意力，影響模型是否抓到真正重要的限制。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+要把目標、限制、已決策事項和驗收標準放在清楚位置，必要時摘要和重排 context。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Context Window](context-window.md)
+- [Attention Degradation](attention-degradation.md)
+- [Smart Zone](smart-zone.md)

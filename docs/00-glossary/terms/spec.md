@@ -9,37 +9,34 @@ learning_stages: [level3, level4]
 related_terms: [ticket, skill, handoff-artifact]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Spec - 規格
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Spec 是把需求轉成可執行、可檢查、可交付規格的文件或描述。
 
 ## 不要誤會成
 
-TODO
+它不是靈感、願望或一句功能名稱。
 
 ## 為什麼重要
 
-TODO
+Spec 是人類意圖與 Agent 執行之間的橋樑，越清楚越能減少來回修正。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L3 Skill 與可重複工作流層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+開始實作前要確認目標、非目標、輸入輸出、狀態、錯誤情境和驗收標準。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Ticket](ticket.md)
+- [Skill](skill.md)
+- [Handoff Artifact](handoff-artifact.md)

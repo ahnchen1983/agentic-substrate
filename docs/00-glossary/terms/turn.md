@@ -9,37 +9,34 @@ learning_stages: [level1]
 related_terms: [session, context, model-provider-request]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Turn - 對話輪次
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Turn 是對話或 Agent 執行中的一個互動回合，可能包含訊息、工具呼叫和工具結果。
 
 ## 不要誤會成
 
-TODO
+它不是只有使用者一句話，也不一定只有模型一段回答。
 
 ## 為什麼重要
 
-TODO
+多工具 Agent 的一個 turn 可能包含觀察、行動和修正，理解 turn 有助於除錯工作流。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L5 Interface 使用介面層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+回報時要區分使用者要求、Agent 推論、工具呼叫和工具回傳，避免混在一起。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Session](session.md)
+- [Context](context.md)
+- [Model Provider Request](model-provider-request.md)

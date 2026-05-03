@@ -9,37 +9,34 @@ learning_stages: [level2]
 related_terms: [model, inference, model-provider-request]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Model provider - 模型供應商
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Model provider 是提供模型、API、計費、政策與基礎服務的供應方。
 
 ## 不要誤會成
 
-TODO
+它不是單一模型名稱，也不等於使用者看到的產品介面。
 
 ## 為什麼重要
 
-TODO
+選擇 provider 會影響模型可用性、資料政策、工具支援、成本與企業合規。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L2 工具與環境層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+在建議工具組合時要區分 provider、model、product 和 harness。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Model](model.md)
+- [Inference](inference.md)
+- [Model Provider Request](model-provider-request.md)

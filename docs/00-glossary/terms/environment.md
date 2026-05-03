@@ -9,37 +9,34 @@ learning_stages: [level2]
 related_terms: [filesystem, sandbox, permission-mode]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Environment - 環境
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Environment 是 Agent 執行任務時所在的環境，包括作業系統、工作目錄、工具、網路與權限。
 
 ## 不要誤會成
 
-TODO
+它不是模型本身，也不等於使用者的全部電腦。
 
 ## 為什麼重要
 
-TODO
+同一個 prompt 在不同 environment 可能能做的事完全不同。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L2 工具與環境層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+動手前要確認 cwd、可用工具、sandbox、network、依賴版本和輸出位置。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Filesystem](filesystem.md)
+- [Sandbox](sandbox.md)
+- [Permission Mode](permission-mode.md)

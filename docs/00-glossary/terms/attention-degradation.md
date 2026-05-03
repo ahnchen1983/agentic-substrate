@@ -9,37 +9,34 @@ learning_stages: [level1, level4]
 related_terms: [context-window, attention-budget, compaction]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Attention degradation - 注意力衰退
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Attention degradation 是長任務中模型逐漸失焦、遺漏早期限制或受雜訊干擾的現象。
 
 ## 不要誤會成
 
-TODO
+它不是單純的 hallucination，也不一定代表模型變弱。
 
 ## 為什麼重要
 
-TODO
+它解釋了為什麼長工作流需要 checkpoint、摘要、狀態檔和清楚的 handoff artifact。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+發現輸出偏離時，要重新整理目前狀態、移除過期資訊，並重申不可破壞的決策。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Context Window](context-window.md)
+- [Attention Budget](attention-budget.md)
+- [Compaction](compaction.md)

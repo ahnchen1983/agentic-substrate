@@ -9,37 +9,34 @@ learning_stages: [level2, level4]
 related_terms: [permission-request, sandbox, agent-mode]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Permission mode - 權限模式
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Permission mode 是控制 Agent 哪些操作可直接執行、哪些需要使用者批准的權限模式。
 
 ## 不要誤會成
 
-TODO
+它不是單純的安全提示，也不是模型能力設定。
 
 ## 為什麼重要
 
-TODO
+它決定 AI 工作能否安全地從建議走向執行。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L2 工具與環境層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+根據任務風險選擇權限；涉及寫檔、刪除、網路、push 或金錢時要提高審慎度。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Permission Request](permission-request.md)
+- [Sandbox](sandbox.md)
+- [Agent Mode](agent-mode.md)

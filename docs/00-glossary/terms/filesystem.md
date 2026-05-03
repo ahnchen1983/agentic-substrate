@@ -9,37 +9,34 @@ learning_stages: [level2, level4]
 related_terms: [environment, tool, agents-md]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Filesystem - 檔案系統
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Filesystem 是檔案與資料夾構成的工作空間，Agent 透過工具在其中讀寫專案內容。
 
 ## 不要誤會成
 
-TODO
+它不是模型記憶，也不代表 Agent 可以讀取整台電腦。
 
 ## 為什麼重要
 
-TODO
+對 coding agent 來說，repo 裡的檔案通常比對話歷史更可靠，是可持續記憶的主要載體。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L2 工具與環境層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+讀寫檔案前要確認路徑、權限和是否有使用者未提交變更；不要覆蓋不相關改動。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Environment](environment.md)
+- [Tool](tool.md)
+- [Agents Md](agents-md.md)

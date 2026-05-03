@@ -9,37 +9,34 @@ learning_stages: [level4]
 related_terms: [handoff-artifact, spec, ticket]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Handoff - 交接
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Handoff 是把工作狀態交給下一個人或 Agent 的交接行為。
 
 ## 不要誤會成
 
-TODO
+它不是一句「繼續」或一段鬆散摘要。
 
 ## 為什麼重要
 
-TODO
+Agent 工作常跨 session、跨工具或跨角色，好的 handoff 能避免重做和誤改。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+交接時要包含目標、已完成事項、未完成事項、決策理由、風險、驗證結果和關鍵檔案。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Handoff Artifact](handoff-artifact.md)
+- [Spec](spec.md)
+- [Ticket](ticket.md)

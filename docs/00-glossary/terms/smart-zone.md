@@ -9,37 +9,34 @@ learning_stages: [level1, level4]
 related_terms: [attention-budget, attention-degradation, context-window]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Smart zone - 智慧區
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Smart zone 是 context 中最容易被模型注意並影響輸出的關鍵位置。
 
 ## 不要誤會成
 
-TODO
+它不是正式標準名詞，而是用來提醒資訊擺放會影響模型注意力的工作概念。
 
 ## 為什麼重要
 
-TODO
+把任務目標、限制和驗收標準放在 smart zone，可以提升長任務穩定度。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層、L4 Agent 協調層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+整理 prompt 或文件時，要把最重要的決策靠近當前任務，並用標題清楚標示。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Attention Budget](attention-budget.md)
+- [Attention Degradation](attention-degradation.md)
+- [Context Window](context-window.md)

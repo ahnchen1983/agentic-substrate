@@ -9,37 +9,34 @@ learning_stages: [level2, level3]
 related_terms: [automated-review, tool-result, skill]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Automated check - 自動檢查
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Automated check 是用程式或工具自動檢查格式、建置、測試、連結或資料結構的驗證步驟。
 
 ## 不要誤會成
 
-TODO
+它不是內容品質保證，也不等於人類審稿。
 
 ## 為什麼重要
 
-TODO
+它讓 Agent 工作可重複、可稽核，減少靠感覺判斷「應該沒壞」。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L2 工具與環境層、L3 Skill 與可重複工作流層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 2 AI 工具的選擇與搭配、Day 3 把自己的工作方法交給 AI 協作，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+執行後要說明檢查範圍；通過只代表被檢查的項目通過，不能擴大解讀。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Automated Review](automated-review.md)
+- [Tool Result](tool-result.md)
+- [Skill](skill.md)

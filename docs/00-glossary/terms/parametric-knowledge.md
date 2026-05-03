@@ -9,37 +9,34 @@ learning_stages: [level1]
 related_terms: [parameters, knowledge-cutoff, contextual-knowledge]
 source_inspiration:
   - mattpocock/dictionary-of-ai-coding
-status: stub
+status: draft
 ---
 
 # Parametric knowledge - 參數知識
 
-> Stub page. This term is registered in ../glossary.registry.yaml and will be expanded in a later phase.
-> 術語頁骨架。此術語已登錄於 ../glossary.registry.yaml，後續階段會補完整說明。
-
 ## 一句話
 
-TODO
+Parametric knowledge 是模型在訓練中吸收到並儲存在權重裡的知識。
 
 ## 不要誤會成
 
-TODO
+它不是即時查詢結果，也不是可追溯來源的資料庫。
 
 ## 為什麼重要
 
-TODO
+它能讓模型快速回答一般知識，但遇到最新或高風險內容時需要外部驗證。
 
 ## 在五層模型的位置
 
-TODO
+主要對應 L1 模型層。理解它可以幫助你判斷問題發生在五層模型的哪個位置。
 
 ## 課程中會出現在哪裡
 
-TODO
+這個術語會出現在 Day 1 重新認識生成式 AI，用來幫助學員把實作經驗連回 AI 工作系統的概念。
 
 ## Agent 需要注意什麼
 
-TODO
+要區分「模型記得」與「工具查到」；需要來源時不能只靠 parametric knowledge。
 
 ## 情境例句
 
@@ -55,4 +52,6 @@ TODO
 
 ## 相關術語
 
-TODO
+- [Parameters](parameters.md)
+- [Knowledge Cutoff](knowledge-cutoff.md)
+- [Contextual Knowledge](contextual-knowledge.md)
