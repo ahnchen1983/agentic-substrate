@@ -46,6 +46,7 @@ If you have ever thought, "AI is useful, but I keep explaining the same work pro
 | If you want to... | Start here |
 |---|---|
 | Understand the big idea | [Start Here](docs/START-HERE.md) |
+| Decode AI coding jargon first | [AI Coding Terms](docs/00-glossary/ai-coding-terms.md) |
 | Explore the three-session course | [Interactive Course](course.html) |
 | Open the detailed Day 1 course | [Day 1 Interactive Page](course-day1.html) |
 | Open the detailed Day 2 course | [Day 2 Interactive Page](course-day2.html) |
@@ -59,6 +60,7 @@ If you have ever thought, "AI is useful, but I keep explaining the same work pro
 | 如果你想要... | 從這裡開始 |
 |---|---|
 | 理解核心概念 | [Start Here](docs/START-HERE.md) |
+| 先拆解 AI Coding 術語 | [AI Coding Terms](docs/00-glossary/ai-coding-terms.md) |
 | 查看三堂課互動講義 | [Interactive Course](course.html) |
 | 查看 Day 1 詳細互動頁 | [Day 1 Interactive Page](course-day1.html) |
 | 查看 Day 2 詳細互動頁 | [Day 2 Interactive Page](course-day2.html) |
@@ -184,6 +186,7 @@ Agentic-Substrate/
 |-- docs/
 |   |-- START-HERE.md                  [published] First reading path for humans and agents
 |   |-- course-planning-notes.md       [published] Planning notes for the three-session course
+|   |-- 00-glossary/                   [published] AI coding terms mapped to Agentic Substrate
 |   |-- examples/                      [published] Concrete workflow-to-Skill examples
 |   |-- 01-foundations/                <-- Core Concepts 核心概念
 |   |   |-- agentic-substrate.md       [published] The Core Architecture 核心架構文件

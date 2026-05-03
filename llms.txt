@@ -7,6 +7,8 @@ Agentic Substrate is for developers, consultants, project managers, educators, o
 ## Recommended Reading Path
 
 - [README](README.md): Project overview, core thesis, repo structure, and entry points.
+- [AI Coding Terms](docs/00-glossary/ai-coding-terms.md): Glossary of selected AI coding terms reframed through the Agentic Substrate five-layer model.
+- [Glossary Development Workflow](docs/00-glossary/DEVELOPMENT-WORKFLOW.md): Process for turning the glossary into a modular, registry-backed knowledge system.
 - [Agent Education Layer](agent-education/README.md): Agent-facing operational interpretation of the framework.
 - [Five-Layer Self-Model](agent-education/self-model/five-layer-self-model.md): Protocol for agents to locate their current operating layer before acting.
 - [Pattern Matrix](agent-education/decision-patterns/pattern-matrix.md): Decision matrix for selecting execution patterns such as routing, parallelization, planning, and evaluator-optimizer loops.

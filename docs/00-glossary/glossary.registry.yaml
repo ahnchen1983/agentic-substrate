@@ -1,0 +1,685 @@
+version: 1
+source_notes:
+  - name: Matt Pocock Dictionary of AI Coding
+    url: https://github.com/mattpocock/dictionary-of-ai-coding
+    usage: inspiration_only_not_reproduced
+  - name: Traditional Chinese reference translation
+    url: https://ai-dict.gh.miniasp.com/
+    usage: reference_only_not_reproduced
+
+categories:
+  model: Model
+  sessions-context-windows-and-turns: Sessions, Context Windows, and Turns
+  tools-and-environment: Tools and Environment
+  failure-modes: Failure Modes
+  handoffs: Handoffs
+  memory-and-steering: Memory and Steering
+  patterns-of-work: Patterns of Work
+
+terms:
+  - id: model
+    term: Model
+    zh: 模型
+    path: docs/00-glossary/terms/model.md
+    category: model
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [parameters, training, inference, harness]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: parameters
+    term: Parameters
+    zh: 參數
+    path: docs/00-glossary/terms/parameters.md
+    category: model
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [model, training, parametric-knowledge]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: training
+    term: Training
+    zh: 訓練
+    path: docs/00-glossary/terms/training.md
+    category: model
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [model, parameters, inference]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: inference
+    term: Inference
+    zh: 推論
+    path: docs/00-glossary/terms/inference.md
+    category: model
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [model, training, token, model-provider-request]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: token
+    term: Token
+    zh: 詞元
+    path: docs/00-glossary/terms/token.md
+    category: model
+    layers: [L1]
+    course_days: [day1, day2]
+    learning_stages: [level1, level2]
+    related_terms: [input-tokens, output-tokens, context-window]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: next-token-prediction
+    term: Next-token prediction
+    zh: 下一個詞元預測
+    path: docs/00-glossary/terms/next-token-prediction.md
+    category: model
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [model, token, non-determinism, hallucination]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: non-determinism
+    term: Non-determinism
+    zh: 非決定性
+    path: docs/00-glossary/terms/non-determinism.md
+    category: model
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [next-token-prediction, hallucination, automated-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: model-provider
+    term: Model provider
+    zh: 模型供應商
+    path: docs/00-glossary/terms/model-provider.md
+    category: model
+    layers: [L1, L2]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [model, inference, model-provider-request]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: harness
+    term: Harness
+    zh: 駕馭層
+    path: docs/00-glossary/terms/harness.md
+    category: model
+    layers: [cross-layer]
+    course_days: [day1, day2]
+    learning_stages: [level2, level4]
+    related_terms: [model, agent, tool, system-prompt, permission-mode]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: model-provider-request
+    term: Model provider request
+    zh: 模型供應商請求
+    path: docs/00-glossary/terms/model-provider-request.md
+    category: model
+    layers: [L1, L2]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [model-provider, inference, input-tokens, output-tokens, tool-result]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: input-tokens
+    term: Input tokens
+    zh: 輸入詞元
+    path: docs/00-glossary/terms/input-tokens.md
+    category: model
+    layers: [L1]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [token, context-window, prefix-cache]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: output-tokens
+    term: Output tokens
+    zh: 輸出詞元
+    path: docs/00-glossary/terms/output-tokens.md
+    category: model
+    layers: [L1]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [token, inference, model-provider-request]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: prefix-cache
+    term: Prefix cache
+    zh: 前綴快取
+    path: docs/00-glossary/terms/prefix-cache.md
+    category: model
+    layers: [L1, L4]
+    course_days: [day2]
+    learning_stages: [level2, level4]
+    related_terms: [input-tokens, cache-tokens, context-window]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: cache-tokens
+    term: Cache tokens
+    zh: 快取詞元
+    path: docs/00-glossary/terms/cache-tokens.md
+    category: model
+    layers: [L1]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [token, prefix-cache, input-tokens]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+
+  - id: stateless
+    term: Stateless
+    zh: 無狀態
+    path: docs/00-glossary/terms/stateless.md
+    category: sessions-context-windows-and-turns
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [stateful, session, memory-system]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: context
+    term: Context
+    zh: 脈絡
+    path: docs/00-glossary/terms/context.md
+    category: sessions-context-windows-and-turns
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [context-window, contextual-knowledge, system-prompt]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: context-window
+    term: Context window
+    zh: 脈絡視窗
+    path: docs/00-glossary/terms/context-window.md
+    category: sessions-context-windows-and-turns
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [context, token, attention-budget, compaction]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: stateful
+    term: Stateful
+    zh: 有狀態
+    path: docs/00-glossary/terms/stateful.md
+    category: sessions-context-windows-and-turns
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [stateless, memory-system, session]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: agent
+    term: Agent
+    zh: 代理人
+    path: docs/00-glossary/terms/agent.md
+    category: sessions-context-windows-and-turns
+    layers: [L4]
+    course_days: [day1, day3]
+    learning_stages: [level4]
+    related_terms: [model, harness, tool, skill, memory-system]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: system-prompt
+    term: System prompt
+    zh: 系統提示詞
+    path: docs/00-glossary/terms/system-prompt.md
+    category: sessions-context-windows-and-turns
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [context, harness, agents-md]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: session
+    term: Session
+    zh: 工作階段
+    path: docs/00-glossary/terms/session.md
+    category: sessions-context-windows-and-turns
+    layers: [L4, L5]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [turn, stateless, memory-system, compaction]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: turn
+    term: Turn
+    zh: 對話輪次
+    path: docs/00-glossary/terms/turn.md
+    category: sessions-context-windows-and-turns
+    layers: [L1, L5]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [session, context, model-provider-request]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+
+  - id: environment
+    term: Environment
+    zh: 環境
+    path: docs/00-glossary/terms/environment.md
+    category: tools-and-environment
+    layers: [L2]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [filesystem, sandbox, permission-mode]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: filesystem
+    term: Filesystem
+    zh: 檔案系統
+    path: docs/00-glossary/terms/filesystem.md
+    category: tools-and-environment
+    layers: [L2]
+    course_days: [day2, day3]
+    learning_stages: [level2, level4]
+    related_terms: [environment, tool, agents-md]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: tool
+    term: Tool
+    zh: 工具
+    path: docs/00-glossary/terms/tool.md
+    category: tools-and-environment
+    layers: [L2]
+    course_days: [day1, day2]
+    learning_stages: [level2]
+    related_terms: [tool-call, tool-result, harness]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: tool-call
+    term: Tool call
+    zh: 工具呼叫
+    path: docs/00-glossary/terms/tool-call.md
+    category: tools-and-environment
+    layers: [L2]
+    course_days: [day1, day2]
+    learning_stages: [level2]
+    related_terms: [tool, tool-result, permission-request, sandbox]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: tool-result
+    term: Tool result
+    zh: 工具結果
+    path: docs/00-glossary/terms/tool-result.md
+    category: tools-and-environment
+    layers: [L2, L4]
+    course_days: [day2, day3]
+    learning_stages: [level2, level4]
+    related_terms: [tool-call, hallucination, automated-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: permission-request
+    term: Permission request
+    zh: 權限請求
+    path: docs/00-glossary/terms/permission-request.md
+    category: tools-and-environment
+    layers: [L2, L5]
+    course_days: [day2]
+    learning_stages: [level2]
+    related_terms: [permission-mode, tool-call, sandbox]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: permission-mode
+    term: Permission mode
+    zh: 權限模式
+    path: docs/00-glossary/terms/permission-mode.md
+    category: tools-and-environment
+    layers: [L2, L4]
+    course_days: [day2]
+    learning_stages: [level2, level4]
+    related_terms: [permission-request, sandbox, agent-mode]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: agent-mode
+    term: Agent mode
+    zh: 代理模式
+    path: docs/00-glossary/terms/agent-mode.md
+    category: tools-and-environment
+    layers: [L4, L5]
+    course_days: [day2, day3]
+    learning_stages: [level4]
+    related_terms: [agent, permission-mode, sandbox]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: sandbox
+    term: Sandbox
+    zh: 沙盒
+    path: docs/00-glossary/terms/sandbox.md
+    category: tools-and-environment
+    layers: [L2, L4]
+    course_days: [day2]
+    learning_stages: [level2, level4]
+    related_terms: [environment, permission-mode, tool-call]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+
+  - id: sycophancy
+    term: Sycophancy
+    zh: 迎合性
+    path: docs/00-glossary/terms/sycophancy.md
+    category: failure-modes
+    layers: [L1, L5]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [hallucination, human-review, grilling]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: hallucination
+    term: Hallucination
+    zh: 幻覺
+    path: docs/00-glossary/terms/hallucination.md
+    category: failure-modes
+    layers: [L1]
+    course_days: [day1, day2]
+    learning_stages: [level1, level2]
+    related_terms: [knowledge-cutoff, contextual-knowledge, tool-result, human-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: parametric-knowledge
+    term: Parametric knowledge
+    zh: 參數知識
+    path: docs/00-glossary/terms/parametric-knowledge.md
+    category: failure-modes
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [parameters, knowledge-cutoff, contextual-knowledge]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: knowledge-cutoff
+    term: Knowledge cutoff
+    zh: 知識截止
+    path: docs/00-glossary/terms/knowledge-cutoff.md
+    category: failure-modes
+    layers: [L1]
+    course_days: [day1, day2]
+    learning_stages: [level1, level2]
+    related_terms: [parametric-knowledge, contextual-knowledge, tool]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: contextual-knowledge
+    term: Contextual knowledge
+    zh: 脈絡知識
+    path: docs/00-glossary/terms/contextual-knowledge.md
+    category: failure-modes
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [context, parametric-knowledge, memory-system]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: attention-relationship
+    term: Attention relationship
+    zh: 注意力關係
+    path: docs/00-glossary/terms/attention-relationship.md
+    category: failure-modes
+    layers: [L1]
+    course_days: [day1]
+    learning_stages: [level1]
+    related_terms: [attention-budget, attention-degradation, context-window]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: attention-budget
+    term: Attention budget
+    zh: 注意力預算
+    path: docs/00-glossary/terms/attention-budget.md
+    category: failure-modes
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [context-window, attention-degradation, smart-zone]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: attention-degradation
+    term: Attention degradation
+    zh: 注意力衰退
+    path: docs/00-glossary/terms/attention-degradation.md
+    category: failure-modes
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [context-window, attention-budget, compaction]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: smart-zone
+    term: Smart zone
+    zh: 智慧區
+    path: docs/00-glossary/terms/smart-zone.md
+    category: failure-modes
+    layers: [L1, L4]
+    course_days: [day1, day3]
+    learning_stages: [level1, level4]
+    related_terms: [attention-budget, attention-degradation, context-window]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+
+  - id: clearing
+    term: Clearing
+    zh: 清除
+    path: docs/00-glossary/terms/clearing.md
+    category: handoffs
+    layers: [L4, L5]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [session, handoff, compaction]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: handoff
+    term: Handoff
+    zh: 交接
+    path: docs/00-glossary/terms/handoff.md
+    category: handoffs
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [handoff-artifact, spec, ticket]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: handoff-artifact
+    term: Handoff artifact
+    zh: 交接產物
+    path: docs/00-glossary/terms/handoff-artifact.md
+    category: handoffs
+    layers: [L3, L4]
+    course_days: [day3]
+    learning_stages: [level3, level4]
+    related_terms: [handoff, spec, ticket, skill]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: spec
+    term: Spec
+    zh: 規格
+    path: docs/00-glossary/terms/spec.md
+    category: handoffs
+    layers: [L3, L4]
+    course_days: [day2, day3]
+    learning_stages: [level3, level4]
+    related_terms: [ticket, skill, handoff-artifact]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: ticket
+    term: Ticket
+    zh: 工單
+    path: docs/00-glossary/terms/ticket.md
+    category: handoffs
+    layers: [L4, L5]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [spec, handoff, human-in-the-loop]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: compaction
+    term: Compaction
+    zh: 壓縮
+    path: docs/00-glossary/terms/compaction.md
+    category: handoffs
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [context-window, session, autocompact, memory-system]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: autocompact
+    term: Autocompact
+    zh: 自動壓縮
+    path: docs/00-glossary/terms/autocompact.md
+    category: handoffs
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [compaction, context-window, memory-system]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+
+  - id: memory-system
+    term: Memory system
+    zh: 記憶系統
+    path: docs/00-glossary/terms/memory-system.md
+    category: memory-and-steering
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [stateful, agents-md, compaction, contextual-knowledge]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: agents-md
+    term: AGENTS.md
+    zh: AGENTS.md
+    path: docs/00-glossary/terms/agents-md.md
+    category: memory-and-steering
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [memory-system, system-prompt, progressive-disclosure]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: progressive-disclosure
+    term: Progressive disclosure
+    zh: 漸進揭露
+    path: docs/00-glossary/terms/progressive-disclosure.md
+    category: memory-and-steering
+    layers: [cross-layer]
+    course_days: [day1, day3]
+    learning_stages: [level3, level4]
+    related_terms: [skill, agents-md, context-window]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: skill
+    term: Skill
+    zh: 技能
+    path: docs/00-glossary/terms/skill.md
+    category: memory-and-steering
+    layers: [L3]
+    course_days: [day1, day3]
+    learning_stages: [level3]
+    related_terms: [spec, progressive-disclosure, subagent, automated-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: draft
+  - id: subagent
+    term: Subagent
+    zh: 子代理
+    path: docs/00-glossary/terms/subagent.md
+    category: memory-and-steering
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [agent, handoff, agent-mode]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+
+  - id: human-in-the-loop
+    term: Human-in-the-loop
+    zh: 人在迴圈中
+    path: docs/00-glossary/terms/human-in-the-loop.md
+    category: patterns-of-work
+    layers: [L4, L5]
+    course_days: [day1, day2, day3]
+    learning_stages: [level2, level3, level4]
+    related_terms: [human-review, permission-request, automated-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: afk
+    term: AFK
+    zh: 離開鍵盤
+    path: docs/00-glossary/terms/afk.md
+    category: patterns-of-work
+    layers: [L4]
+    course_days: [day3]
+    learning_stages: [level4]
+    related_terms: [agent, permission-mode, automated-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: automated-check
+    term: Automated check
+    zh: 自動檢查
+    path: docs/00-glossary/terms/automated-check.md
+    category: patterns-of-work
+    layers: [L2, L3]
+    course_days: [day2, day3]
+    learning_stages: [level2, level3]
+    related_terms: [automated-review, tool-result, skill]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: automated-review
+    term: Automated review
+    zh: 自動審查
+    path: docs/00-glossary/terms/automated-review.md
+    category: patterns-of-work
+    layers: [L3, L4]
+    course_days: [day2, day3]
+    learning_stages: [level3, level4]
+    related_terms: [automated-check, human-review, hallucination]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: human-review
+    term: Human review
+    zh: 人工審查
+    path: docs/00-glossary/terms/human-review.md
+    category: patterns-of-work
+    layers: [L4, L5]
+    course_days: [day1, day2, day3]
+    learning_stages: [level2, level3, level4]
+    related_terms: [human-in-the-loop, automated-review, hallucination]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: vibe-coding
+    term: Vibe coding
+    zh: 氛圍編程
+    path: docs/00-glossary/terms/vibe-coding.md
+    category: patterns-of-work
+    layers: [L5]
+    course_days: [day2]
+    learning_stages: [level2, level3]
+    related_terms: [human-in-the-loop, tool-call, automated-review]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: design-concept
+    term: Design concept
+    zh: 設計概念
+    path: docs/00-glossary/terms/design-concept.md
+    category: patterns-of-work
+    layers: [L3, L5]
+    course_days: [day2, day3]
+    learning_stages: [level3]
+    related_terms: [spec, skill, vibe-coding]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub
+  - id: grilling
+    term: Grilling
+    zh: 追問檢驗
+    path: docs/00-glossary/terms/grilling.md
+    category: patterns-of-work
+    layers: [L1, L5]
+    course_days: [day1, day2]
+    learning_stages: [level1, level2]
+    related_terms: [human-review, sycophancy, hallucination]
+    source_inspiration: [mattpocock/dictionary-of-ai-coding]
+    status: stub

@@ -31,12 +31,13 @@ Read in this order:
 閱讀順序建議：
 
 1. [README](../README.md) - what this repo is and why it exists.
-2. [Interactive Course](../course.html) - see the three-session course as an interactive deck.
-3. [Quick Start](../QUICK-START.md) - try the first Skill in five minutes.
-4. [Workflow to Skill Example](examples/workflow-to-skill.md) - see one concrete transformation.
-5. [You Already Know How to Build a Skill](04-curriculum/you-already-know.md) - especially if you are not an engineer.
-6. [Learning Path](04-curriculum/learning-path.md) - understand the path from chat to agents.
-7. [Five-Layer Model](01-foundations/five-layer-model.md) - see the full architecture.
+2. [AI Coding Terms](00-glossary/ai-coding-terms.md) - decode terms like context window, tool call, agent, memory, and Skill.
+3. [Interactive Course](../course.html) - see the three-session course as an interactive deck.
+4. [Quick Start](../QUICK-START.md) - try the first Skill in five minutes.
+5. [Workflow to Skill Example](examples/workflow-to-skill.md) - see one concrete transformation.
+6. [You Already Know How to Build a Skill](04-curriculum/you-already-know.md) - especially if you are not an engineer.
+7. [Learning Path](04-curriculum/learning-path.md) - understand the path from chat to agents.
+8. [Five-Layer Model](01-foundations/five-layer-model.md) - see the full architecture.
 
 ---
 
@@ -46,11 +47,12 @@ Start with:
 
 先讀：
 
-1. [Core Architecture](01-foundations/agentic-substrate.md)
-2. [Skill Anatomy](01-foundations/skill-anatomy.md)
-3. [Skill Composition](02-architecture/skill-composition.md)
-4. [Memory and State](02-architecture/memory-and-state.md)
-5. [Claude Architecture Case Study](03-claude-case-study/claude-architecture.md)
+1. [AI Coding Terms](00-glossary/ai-coding-terms.md)
+2. [Core Architecture](01-foundations/agentic-substrate.md)
+3. [Skill Anatomy](01-foundations/skill-anatomy.md)
+4. [Skill Composition](02-architecture/skill-composition.md)
+5. [Memory and State](02-architecture/memory-and-state.md)
+6. [Claude Architecture Case Study](03-claude-case-study/claude-architecture.md)
 
 You are looking for the architectural shift: deterministic software is not disappearing, but the logic layer is moving toward LLM-guided inference, workflow composition, and agent orchestration.
 
