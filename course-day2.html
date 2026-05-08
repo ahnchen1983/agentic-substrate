@@ -22,6 +22,7 @@
         <a href="docs/00-glossary/terms/tool-result.md">Tool Result</a>
         <a href="docs/00-glossary/terms/permission-mode.md">Permission Mode</a>
         <a href="docs/00-glossary/terms/human-review.md">Human Review</a>
+        <a href="course-planning/materials/05-AI術語速查表.md">AI 術語速查表</a>
       </div>
     </div>
   </section>
@@ -32,7 +33,7 @@
       <h2>Day 2 產出導向節奏</h2>
       <div class="run">
         <div class="time">0-5</div><div>安全紅線複誦 + Day 1 回顧</div>
-        <div class="time">5-20</div><div>AI Tool Picker：三問框架，判斷網站任務需要哪些工具</div>
+        <div class="time">5-20</div><div>AI Tool Picker：三問框架 + 風險開關，判斷工具與驗證方式</div>
         <div class="time">20-35</div><div>反向挑戰：不用 AI 做網站會怎麼做？AI 幫在哪？</div>
         <div class="time">35-50</div><div>一頁式網站工具鏈示範：輸入 -> 串接 -> 輸出 -> 人工覆核</div>
         <div class="time">50-95</div><div>實作工作坊：完成自己的網站內容包與建站提示詞</div>
@@ -50,10 +51,31 @@
         <div class="field"><label>1. 這是探索還是生產？</label><select id="qType" class="btn" style="width:100%;"><option value="explore">探索：還在找答案</option><option value="produce">生產：知道要產出什麼</option></select></div>
         <div class="field"><label>2. 需要最新資訊嗎？</label><select id="qFresh" class="btn" style="width:100%;"><option value="yes">需要</option><option value="no">不需要</option></select></div>
         <div class="field"><label>3. 複雜長流程嗎？</label><select id="qFlow" class="btn" style="width:100%;"><option value="yes">是，多步驟/多工具</option><option value="no">否，單一任務</option></select></div>
+        <div class="field"><label>4. 高風險或公開輸出嗎？</label><select id="qRisk" class="btn" style="width:100%;"><option value="yes">是，需要第二模型驗證</option><option value="no">否，人工覆核即可</option></select></div>
         <div class="field"><label>我的任務</label><input id="taskName" placeholder="例如：替我的工作室做一頁式網站"></div>
       </div>
       <div class="actions"><button class="btn primary" id="pickTool">產生建議工具組合</button></div>
       <pre class="output" id="toolOutput">選好三個答案後，這裡會產生工具組合建議。</pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Risk Switch</div>
+      <h2>三問之外，再加一個風險開關</h2>
+      <div class="grid two">
+        <div class="panel rose">
+          <h3>高風險 / 公開輸出</h3>
+          <p>客戶會看到、公開上線、涉及金錢承諾、品牌聲譽、法規、醫療、財務或個資。</p>
+          <div class="note">建議：至少多一個模型做交叉驗證或反方審查。</div>
+        </div>
+        <div class="panel green">
+          <h3>低風險 / 個人草稿</h3>
+          <p>個人筆記、低風險內部整理、腦力激盪、格式轉換。</p>
+          <div class="note">建議：單一模型快速產出，再由人做基本檢查。</div>
+        </div>
+      </div>
+      <div class="note">多模型不是每次都要開三個 AI。它是一個風險開關：風險越高，越不要只聽一個模型。</div>
     </div>
   </section>
 
@@ -83,7 +105,7 @@
         <div class="panel amber"><h3>Step 2</h3><p>哪些環節最花時間？通常是定位不清、文案卡住、版面不知道怎麼排、社群貼文不會寫。</p></div>
         <div class="panel blue"><h3>Step 3</h3><p>哪些交給 AI？哪些仍由人判斷？AI 可起草與組織，人要確認定位、事實、承諾與品牌感。</p></div>
       </div>
-      <div class="note">今天不是做漂亮模板，而是做一個「可以對外說清楚你是誰、提供什麼、下一步怎麼聯絡」的最小可展示頁。</div>
+      <div class="note">今天不是做漂亮模板，而是做一個「可以對外說清楚你是誰、提供什麼、下一步怎麼聯絡」的最小可展示頁。只要要公開，就要設計驗證與審查。</div>
     </div>
   </section>
 
@@ -123,7 +145,7 @@
       <h2>哪些任務不適合直接交給 AI？</h2>
       <div class="grid">
         <div class="panel rose"><h3>未脫敏資料</h3><p>客戶個資、公司機密、真實合約資料不要直接貼。</p></div>
-        <div class="panel rose"><h3>無法驗證的輸出</h3><p>你不知道對錯，就不該直接採用。</p></div>
+        <div class="panel rose"><h3>無法驗證的輸出</h3><p>你不知道對錯，就不該直接採用；必要時請第二模型用反方角度挑錯。</p></div>
         <div class="panel rose"><h3>高風險決策</h3><p>法律、醫療、財務不能完全交給 AI。</p></div>
         <div class="panel amber"><h3>成本倒掛</h3><p>Prompt 設定比人工執行還久，就不值得。</p></div>
         <div class="panel amber"><h3>敏感關係</h3><p>需要信任、同理、承諾的場景，人要站前面。</p></div>
@@ -137,7 +159,7 @@
       <div class="kicker">Closing</div>
       <h2>Day 3 預告：怎麼讓這次網站流程下次也能用？</h2>
       <p class="lead">今天你做出一個一頁式網站內容包。明天要把這條工具鏈文件化、標準化、可複用化，變成一張 AI 能真的執行的工作流卡。</p>
-      <div class="note">核心句：工具會變，決策邏輯不變；成果要能帶走，流程要能複用。</div>
+      <div class="note">核心句：工具會變，決策邏輯不變；風險越高，越需要交叉驗證；成果要能帶走，流程要能複用。</div>
       <div class="term-links" aria-label="Day 2 closing glossary terms">
         <a href="docs/00-glossary/terms/spec.md">Spec</a>
         <a href="docs/00-glossary/terms/automated-review.md">Automated Review</a>
@@ -146,7 +168,7 @@
     </div>
   </section>
 </main>
-<div class="counter" id="counter">1 / 9</div>
+<div class="counter" id="counter">1 / 10</div>
 <div class="dots" id="dots"></div>
 <div class="nav"><a href="course.html">H</a><button id="prev">‹</button><button id="next">›</button></div>
 <script src="assets/course-pages.js"></script>
@@ -155,16 +177,23 @@ document.getElementById("pickTool").addEventListener("click", () => {
   const type = document.getElementById("qType").value;
   const fresh = document.getElementById("qFresh").value;
   const flow = document.getElementById("qFlow").value;
+  const risk = document.getElementById("qRisk").value;
   const task = document.getElementById("taskName").value || "我的任務";
   let tools = "Claude / ChatGPT";
   if (fresh === "yes") tools = "ChatGPT 網頁搜尋 / Gemini / Perplexity";
   if (flow === "yes" && fresh === "yes") tools = "Perplexity 或 Gemini 查資料 -> Claude 結構化 -> 人類覆核 -> 表單/文件工具產出";
   if (flow === "yes" && fresh === "no") tools = "Claude / ChatGPT 結構化 -> Notion/Sheets 管理 -> Zapier/n8n 自動化候選";
   if (type === "produce" && flow === "no") tools = "Claude / ChatGPT 單工具即可，重點是給清楚輸入與輸出格式";
+  const validation = risk === "yes"
+    ? "第二模型審查：請另一個模型用審查者角度檢查事實、承諾、缺少輸入、風險與需要人類判斷的地方。"
+    : "基本人工覆核：確認資料、語氣、承諾與 CTA 是否合理即可。";
   document.getElementById("toolOutput").textContent = `任務：${task}
 
 建議工具組合：
 ${tools}
+
+驗證建議：
+${validation}
 
 人工覆核點：
 - 資料是否可靠
@@ -226,6 +255,10 @@ Hero 首屏文案：
 請根據以上內容，幫我產出一個一頁式網站草稿。
 風格要清楚、可信、容易掃讀，不要過度行銷。
 請輸出：區塊標題、每區短文案、CTA 按鈕文字、圖片建議、人工需要補上的資料。
+
+第二模型審查提示詞：
+請不要重寫網站內容，請用審查者角度檢查這份一頁式網站草稿。
+請列出：哪些地方可能不真實、哪些承諾過度、哪些缺少證據、哪些地方需要人類最後判斷。
 
 社群貼文草稿：
 我整理了一個新的頁面：${name}

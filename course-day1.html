@@ -26,6 +26,7 @@
         <a href="docs/00-glossary/terms/agent.md">Agent</a>
         <a href="docs/00-glossary/terms/hallucination.md">Hallucination</a>
         <a href="docs/00-glossary/terms/skill.md">Skill</a>
+        <a href="course-planning/materials/05-AI術語速查表.md">AI 術語速查表</a>
       </div>
     </div>
   </section>
@@ -113,7 +114,20 @@
         <div class="panel amber"><h3>手腳：Tools / Agents</h3><p>查網頁、讀檔案、寄信、畫圖、控制軟體。讓 AI 從回答走向行動。</p></div>
         <div class="panel blue"><h3>肌肉記憶：Workflow / Skill</h3><p>你教它照你的方式做事。下次它知道順序、工具和檢查方式。</p></div>
       </div>
-      <div class="note">傳統軟體是確定性的；AI 是概率性的。所以你需要設計檢查機制。</div>
+      <div class="note">傳統軟體是確定性的；AI 是概率性的。所以你需要設計檢查機制。風險越高，越不要只讓一個模型說了算。</div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="inner">
+      <div class="kicker">Multi-Model Supervision</div>
+      <h2>升級觀念：不是只用一個 LLM，而是設計多模型互相監督</h2>
+      <div class="grid">
+        <div class="panel green"><h3>產出者</h3><p>快速產生初稿、方案、文案。適合 Claude / ChatGPT。</p></div>
+        <div class="panel amber"><h3>查證者</h3><p>補最新資訊、來源、外部事實。適合 Gemini / Perplexity / 搜尋工具。</p></div>
+        <div class="panel blue"><h3>審查者</h3><p>找漏洞、挑風險、檢查承諾是否過度。可以用另一個模型擔任。</p></div>
+      </div>
+      <div class="note">多模型不是投票決定真相，而是分工：一個產出、一個查證、一個挑錯。最後負責判斷的人仍然是你。</div>
     </div>
   </section>
 
@@ -138,6 +152,7 @@
       <div class="kicker">Visual Model</div>
       <h2>三層簡化模型圖</h2>
       <img class="diagram" src="assets/diagrams/three-layer-model.svg" alt="AI 三層簡化模型：LLM、Tools/Agents、Workflow/Skill">
+      <div class="note">今天先記住一個實務版本：單一模型產出，多模型挑錯，人類做決策。</div>
     </div>
   </section>
 
@@ -166,7 +181,7 @@
         <tr><th>問題</th><th>傳統做法</th><th>ChatGPT</th><th>Agent 工作流</th></tr>
         <tr><td>誰決定流程？</td><td>你，每次重想</td><td>AI，但通常很通用</td><td>AI 按你的邏輯跑</td></tr>
         <tr><td>能不能下次複用？</td><td>每次重新來</td><td>可複用 prompt，但仍要搬資料</td><td>流程可以複用，改資料即可</td></tr>
-        <tr><td>出問題誰檢查？</td><td>你自己查漏</td><td>你驗證 AI 答案</td><td>每一步都有檢查點</td></tr>
+        <tr><td>出問題誰檢查？</td><td>你自己查漏</td><td>你驗證 AI 答案</td><td>每一步都有檢查點，必要時加第二模型審查</td></tr>
         <tr><td>能不能教別人？</td><td>要解釋很多細節</td><td>要教 prompt 寫法</td><td>流程圖 + 檢查點即可操作</td></tr>
       </table>
       <div class="note">金句：第一種是我在做事；第二種是我在跟 AI 聊天然後自己做事；第三種是我在設計一個系統，系統幫我做事。</div>
@@ -208,7 +223,7 @@
       <div class="grid">
         <div class="panel green"><h3>最強的情境</h3><p>任務清晰、標準明確、有人覆核。</p></div>
         <div class="panel amber"><h3>要小心的情境</h3><p>模糊創意、高風險決策、無法驗證的答案。</p></div>
-        <div class="panel blue"><h3>Day 2 預告</h3><p>明天學三問框架：探索或生產？需要最新資訊？需要長流程嗎？</p></div>
+        <div class="panel blue"><h3>Day 2 預告</h3><p>明天學三問框架：探索或生產？需要最新資訊？需要長流程嗎？這是不是高風險或公開輸出？</p></div>
       </div>
       <div class="note">傳統 App 是確定性的：你按儲存，它就儲存。AI 是概率性的：同樣問題問兩次，可能有不同答案。這不是 bug，這是本質。所以你要學會設計檢查機制。</div>
       <div class="term-links" aria-label="Day 1 closing glossary terms">
@@ -238,7 +253,7 @@
     </div>
   </section>
 </main>
-<div class="counter" id="counter">1 / 15</div>
+<div class="counter" id="counter">1 / 16</div>
 <div class="dots" id="dots"></div>
 <div class="nav"><a href="course.html">H</a><button id="prev">‹</button><button id="next">›</button></div>
 <script src="assets/course-pages.js"></script>
@@ -246,7 +261,7 @@
 const demo = {
   traditional: ["傳統做法", "搜尋範例、開 Word 寫邀請信、Excel 做預算、Google Form 建表單、Canva 做海報，再把所有東西整合成計畫書。耗時約 3-4 小時，而且每個工具都要重新同步上下文。"],
   chat: ["單一 ChatGPT 對話", "一次 prompt 產出活動流程、預算、人力分工、邀請文案與表單欄位。省下很多思考時間，但內容通用，數字需驗證，最後仍要複製到各工具。"],
-  agent: ["Agent / 工作流式做法", "拆成查資料、產企劃、做海報、建表單、寫邀請信。每一步都有來源與檢查點，流程可以複用，下次改資料即可。"]
+  agent: ["Agent / 工作流式做法", "拆成查資料、產企劃、第二模型審查、做海報、建表單、寫邀請信。每一步都有來源與檢查點，流程可以複用，下次改資料即可。"]
 };
 document.querySelectorAll("#demoTabs .tab").forEach(button => {
   button.addEventListener("click", () => {
