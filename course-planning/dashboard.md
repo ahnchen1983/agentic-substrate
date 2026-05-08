@@ -23,6 +23,7 @@
 - Repeat the core memory line across all three sessions.
 - Every session must produce something learners can use immediately.
 - Day 3 must produce an executable AI workflow card.
+- High-risk or public-facing outputs should include multi-model validation before human decision.
 - Tool names may change; decision frameworks should remain useful.
 
 ## Open Questions
@@ -44,3 +45,8 @@ Subtitle:
 ## Current Main Candidate
 
 [v1 - Integrated Agentic Course](versions/v1-integrated-agentic-course.md)
+
+## Learner Materials
+
+- [課前通知郵件](materials/01-課前通知郵件.md)
+- [AI 術語速查表](materials/05-AI術語速查表.md)

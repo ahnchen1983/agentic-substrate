@@ -23,6 +23,9 @@ course-planning/
 |   |-- day2-final.md
 |   |-- day3-final.md
 |   `-- full-course-final.md
+|-- materials/
+|   |-- 01-課前通知郵件.md
+|   `-- 05-AI術語速查表.md
 `-- templates/
     |-- version-template.md
     |-- day-compare-template.md
@@ -34,7 +37,8 @@ course-planning/
 1. Paste each source version into `versions/`.
 2. Compare each day in `days/day*-compare.md`.
 3. Record major decisions in `decision-log.md`.
-4. Move stable decisions into `final/`.
+4. Keep learner-facing handouts and notification drafts in `materials/`.
+5. Move stable decisions into `final/`.
 
 ## Course Anchor
 
@@ -45,4 +49,3 @@ Three-day narrative:
 - Day 1: AI is a system.
 - Day 2: You are designing the system.
 - Day 3: You become the system architect.
-
