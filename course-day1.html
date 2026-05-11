@@ -101,7 +101,31 @@
     <div class="inner">
       <div class="kicker">Visual Model</div>
       <h2>角色演進圖</h2>
-      <img class="diagram" src="assets/diagrams/role-evolution.svg" alt="搜尋、聊天、產出到系統設計者的角色演進圖">
+      <div class="diagram-board" aria-label="搜尋、聊天、產出到系統設計者的角色演進圖">
+        <div class="diagram-flow">
+          <div class="diagram-card amber">
+            <span class="diagram-label">搜尋時代</span>
+            <h3>研究員</h3>
+            <p>Google 給你十個連結，你自己讀、自己整理、自己判斷。</p>
+          </div>
+          <div class="diagram-card">
+            <span class="diagram-label">聊天時代</span>
+            <h3>編輯</h3>
+            <p>AI 回答問題，你追問、修正、挑選可用的答案。</p>
+          </div>
+          <div class="diagram-card blue">
+            <span class="diagram-label">產出時代</span>
+            <h3>方向設定者</h3>
+            <p>你設定目標與限制，AI 產出初稿，你負責判斷與改稿。</p>
+          </div>
+          <div class="diagram-card dark">
+            <span class="diagram-label">下一步</span>
+            <h3>系統設計者</h3>
+            <p>你設計 Workflow / Skill，讓 AI 按你的邏輯跑完整流程。</p>
+          </div>
+        </div>
+        <div class="note">AI 越會做事，你越需要從操作者變成設計者。</div>
+      </div>
     </div>
   </section>
 
@@ -151,7 +175,29 @@
     <div class="inner">
       <div class="kicker">Visual Model</div>
       <h2>三層簡化模型圖</h2>
-      <img class="diagram" src="assets/diagrams/three-layer-model.svg" alt="AI 三層簡化模型：LLM、Tools/Agents、Workflow/Skill">
+      <div class="diagram-stack" aria-label="AI 三層簡化模型：LLM、Tools/Agents、Workflow/Skill">
+        <div class="diagram-layer">
+          <strong>大腦</strong>
+          <div>
+            <h3>LLM</h3>
+            <p>理解、推理、寫作、生成內容。很聰明，但沒有工具就只能「想」。</p>
+          </div>
+        </div>
+        <div class="diagram-layer amber">
+          <strong>手腳</strong>
+          <div>
+            <h3>Tools / Agents</h3>
+            <p>查網頁、讀檔案、畫圖、建表單、串接系統，讓 AI 從回答走向行動。</p>
+          </div>
+        </div>
+        <div class="diagram-layer dark">
+          <strong>肌肉記憶</strong>
+          <div>
+            <h3>Workflow / Skill</h3>
+            <p>照你的方式一步步做，知道順序、工具、品質標準與檢查點。</p>
+          </div>
+        </div>
+      </div>
       <div class="note">今天先記住一個實務版本：單一模型產出，多模型挑錯，人類做決策。</div>
     </div>
   </section>
@@ -192,7 +238,38 @@
     <div class="inner">
       <div class="kicker">Visual Comparison</div>
       <h2>三種做法對比圖</h2>
-      <img class="diagram" src="assets/diagrams/process-cost-comparison.svg" alt="傳統做法、單一 ChatGPT、Agent 工作流的流程成本對比圖">
+      <div class="diagram-flow three" aria-label="傳統做法、單一 ChatGPT、Agent 工作流的流程成本對比圖">
+        <div class="diagram-card amber">
+          <span class="diagram-label">傳統做法</span>
+          <h3>你在做事</h3>
+          <ul class="clean-list">
+            <li>搜尋範例、寫文案、做預算</li>
+            <li>建表單、做海報、整合文件</li>
+            <li>耗時約 3-4 小時</li>
+          </ul>
+          <div class="note">每次都要重新整合。</div>
+        </div>
+        <div class="diagram-card">
+          <span class="diagram-label">單一 ChatGPT</span>
+          <h3>你在跟 AI 聊天</h3>
+          <ul class="clean-list">
+            <li>一次 Prompt 取得企劃概況</li>
+            <li>人工驗證數字與事實</li>
+            <li>耗時約 30 分鐘</li>
+          </ul>
+          <div class="note">結構通用，仍要搬運。</div>
+        </div>
+        <div class="diagram-card dark">
+          <span class="diagram-label">Agent 工作流</span>
+          <h3>你在設計系統</h3>
+          <ul class="clean-list">
+            <li>查資料、產企劃、做素材</li>
+            <li>每一步都有檢查點</li>
+            <li>耗時約 45 分鐘，可複用</li>
+          </ul>
+          <div class="note">流程可以迭代，下次改資料即可。</div>
+        </div>
+      </div>
     </div>
   </section>
 
