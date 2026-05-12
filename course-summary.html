@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>三日課程總整理｜從 Chat 到 Agentic Workflow</title>
+<meta name="description" content="Agentic Substrate 三日課程總整理：用五層模型回顧 Day 1/2/3，整理入門原則、常見踩坑與下一步學習路徑。">
+<style>
+* { box-sizing: border-box; }
+:root {
+  --bg: #f6f3ee;
+  --ink: #171a22;
+  --muted: #66706c;
+  --line: #ded8cc;
+  --panel: #fffefa;
+  --soft: #f2eee6;
+  --green: #127462;
+  --amber: #b87516;
+  --blue: #365f9f;
+  --rose: #a43d5a;
+  --dark: #17221f;
+  --shadow: 0 18px 54px rgba(42, 33, 22, 0.1);
+}
+html, body { margin: 0; min-height: 100%; overflow-x: hidden; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", sans-serif;
+  background:
+    linear-gradient(115deg, rgba(18,116,98,0.14), rgba(255,255,255,0) 34%),
+    radial-gradient(circle at 88% 10%, rgba(54,95,159,0.13), rgba(255,255,255,0) 28%),
+    linear-gradient(180deg, rgba(255,255,255,0.66), rgba(255,255,255,0)),
+    var(--bg);
+  color: var(--ink);
+}
+a { color: inherit; }
+.page {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 56px;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 34px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.brand::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  border-radius: 999px;
+  background: currentColor;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.nav a, .pill-link {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.76);
+  color: #2d3c38;
+  font-size: 14px;
+  font-weight: 760;
+  padding: 8px 12px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 22px;
+  align-items: stretch;
+  margin-bottom: 22px;
+}
+.hero-copy {
+  min-width: 0;
+  padding: 44px;
+  border: 1px solid rgba(222,216,204,0.78);
+  border-radius: 18px;
+  background: rgba(255,253,248,0.82);
+  box-shadow: var(--shadow);
+}
+.kicker {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+h1, h2, h3, p { margin: 0; }
+h1 {
+  max-width: 760px;
+  font-size: 64px;
+  line-height: 1.08;
+  font-weight: 880;
+  letter-spacing: 0;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+h2 {
+  font-size: 38px;
+  line-height: 1.18;
+  font-weight: 840;
+  letter-spacing: 0;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  margin-bottom: 22px;
+}
+h3 {
+  color: #20262d;
+  font-size: 21px;
+  line-height: 1.35;
+  margin-bottom: 9px;
+  overflow-wrap: anywhere;
+}
+p, li {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.72;
+  overflow-wrap: anywhere;
+}
+.lead {
+  max-width: 720px;
+  margin-top: 22px;
+  color: #38423f;
+  font-size: 21px;
+  line-height: 1.72;
+}
+.hero-card {
+  min-width: 0;
+  display: grid;
+  align-content: space-between;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 18px;
+  background: var(--dark);
+  color: #effaf6;
+  box-shadow: var(--shadow);
+}
+.hero-card h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.hero-card p { color: #c6d8d2; }
+.hero-card .route {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+.route-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+}
+.route-item b {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  border-radius: 8px;
+  background: rgba(146,242,221,0.12);
+  color: #92f2dd;
+}
+.route-item span {
+  min-width: 0;
+  color: #effaf6;
+  font-weight: 800;
+  line-height: 1.35;
+}
+.section {
+  margin-top: 22px;
+  padding: 34px;
+  border: 1px solid rgba(222,216,204,0.78);
+  border-radius: 18px;
+  background: rgba(255,253,248,0.82);
+  box-shadow: var(--shadow);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.card {
+  min-width: 0;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid rgba(222,216,204,0.9);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.86);
+  box-shadow: 0 12px 30px rgba(42,33,22,0.055);
+}
+.card.green { border-top: 4px solid var(--green); }
+.card.amber { border-top: 4px solid var(--amber); }
+.card.blue { border-top: 4px solid var(--blue); }
+.card.rose { border-top: 4px solid var(--rose); }
+.card.dark {
+  border-color: var(--dark);
+  background: var(--dark);
+}
+.card.dark h3 { color: #fff; }
+.card.dark p, .card.dark li { color: #c6d8d2; }
+.label {
+  display: inline-flex;
+  max-width: 100%;
+  min-height: 28px;
+  align-items: center;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: rgba(18,116,98,0.1);
+  color: var(--green);
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+.amber .label { color: var(--amber); background: rgba(184,117,22,0.12); }
+.blue .label { color: var(--blue); background: rgba(54,95,159,0.12); }
+.rose .label { color: var(--rose); background: rgba(164,61,90,0.12); }
+.dark .label { color: #92f2dd; background: rgba(146,242,221,0.12); }
+.stack {
+  display: grid;
+  gap: 10px;
+}
+.layer {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(92px, 0.22fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  border: 1px solid rgba(222,216,204,0.92);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.86);
+  padding: 16px;
+}
+.layer strong {
+  display: grid;
+  place-items: center;
+  min-height: 66px;
+  border-radius: 8px;
+  background: rgba(18,116,98,0.1);
+  color: var(--green);
+  font-size: 22px;
+  line-height: 1.25;
+  text-align: center;
+}
+.layer h3 { margin-bottom: 4px; }
+.principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  counter-reset: principle;
+}
+.principle {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 16px;
+  border: 1px solid rgba(222,216,204,0.9);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.82);
+}
+.principle::before {
+  counter-increment: principle;
+  content: counter(principle, decimal-leading-zero);
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--green);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 850;
+}
+.principle h3 {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.principle p { font-size: 15px; line-height: 1.6; }
+.pitfalls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.pitfall {
+  border-left: 4px solid var(--rose);
+  border-radius: 0 8px 8px 0;
+  background: rgba(255,255,255,0.72);
+  padding: 14px 16px;
+}
+.pitfall strong {
+  display: block;
+  color: #20262d;
+  margin-bottom: 4px;
+}
+.pitfall span {
+  display: block;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.next {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.next a {
+  min-width: 0;
+  display: block;
+  padding: 20px;
+  border: 1px solid rgba(222,216,204,0.9);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.86);
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(42,33,22,0.055);
+}
+.next a:hover { border-color: var(--green); }
+.note {
+  margin-top: 18px;
+  border-left: 4px solid var(--green);
+  border-radius: 0 8px 8px 0;
+  background: rgba(255,255,255,0.72);
+  color: #425650;
+  padding: 13px 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+ul.clean {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.clean li {
+  position: relative;
+  padding-left: 15px;
+  font-size: 15px;
+  line-height: 1.62;
+}
+ul.clean li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+}
+.footer {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: 18px;
+  background: var(--dark);
+  color: #effaf6;
+}
+.footer p { color: #c6d8d2; }
+@media (max-width: 980px) {
+  .hero,
+  .grid,
+  .grid.two,
+  .grid.four,
+  .next { grid-template-columns: 1fr; }
+  .principles,
+  .pitfalls { grid-template-columns: 1fr; }
+  h1 { font-size: 46px; }
+  h2 { font-size: 32px; }
+}
+@media (max-width: 620px) {
+  .page { width: min(100% - 24px, 560px); padding-top: 18px; }
+  .topbar { align-items: flex-start; flex-direction: column; }
+  .nav { justify-content: flex-start; }
+  .hero-copy, .hero-card, .section { padding: 22px; border-radius: 14px; }
+  h1 { font-size: 34px; line-height: 1.18; }
+  h2 { font-size: 27px; line-height: 1.25; }
+  .lead { font-size: 18px; }
+  .layer { grid-template-columns: 1fr; }
+  .layer strong { min-height: 48px; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand">Agentic Substrate Course</div>
+    <nav class="nav" aria-label="Course navigation">
+      <a href="course.html">課程入口</a>
+      <a href="course-day1.html">Day 1</a>
+      <a href="course-day2.html">Day 2</a>
+      <a href="course-day3.html">Day 3</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="kicker">Course Summary</div>
+      <h1>三日課程總整理：從 Chat 到 Agentic Workflow</h1>
+      <p class="lead">這三天學到的不是一串工具名稱，而是一套看懂 LLM 時代工作系統的方法：模型負責理解與生成，工具負責行動，Skill 保存流程，Agent 協調人、工具與責任邊界。</p>
+      <div class="note">核心句：你不是在用 AI，你是在設計一個會幫你工作的系統。</div>
+    </div>
+    <aside class="hero-card" aria-label="Three day route">
+      <div>
+        <h2>三天路徑</h2>
+        <p>先換地圖，再選工具，最後把自己的工作方法寫成可交接、可驗證、可重用的流程。</p>
+      </div>
+      <div class="route">
+        <div class="route-item"><b>1</b><span>重新認識 AI：不是 App，是新工作系統入口</span></div>
+        <div class="route-item"><b>2</b><span>選擇與搭配工具：不是追品牌，是組能力</span></div>
+        <div class="route-item"><b>3</b><span>寫出工作流卡：讓專業方法可以被協作</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="kicker">System View</div>
+    <h2>三天學到的不是工具，而是一套系統觀</h2>
+    <div class="grid three">
+      <article class="card green">
+        <span class="label">Day 1</span>
+        <h3>AI 不是搜尋引擎</h3>
+        <p>搜尋給你連結，聊天給你答案；但 LLM-native 工作方法要處理的是任務、情境、判斷與驗證。</p>
+      </article>
+      <article class="card amber">
+        <span class="label">Day 2</span>
+        <h3>工具是能力，不是品牌</h3>
+        <p>ChatGPT、Claude、AI Studio 或搜尋工具都只是不同入口。真正重要的是：任務需要哪一種能力？風險多高？要怎麼查證？</p>
+      </article>
+      <article class="card blue">
+        <span class="label">Day 3</span>
+        <h3>流程才會累積專業</h3>
+        <p>當你的方法被寫成工作流卡，AI 才能照著跑，同學才看得懂，下一位專業負責人才接得下去。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">Five-Layer Cheat Sheet</div>
+    <h2>五層模型速查</h2>
+    <div class="stack">
+      <div class="layer">
+        <strong>LLM</strong>
+        <div><h3>大腦：理解、推理、生成</h3><p>模型能讀懂你的意圖、整理資料、產生文字與方案，但它本身不等於完整工作系統。</p></div>
+      </div>
+      <div class="layer">
+        <strong>Tools</strong>
+        <div><h3>手腳：查資料、讀檔案、產出行動</h3><p>工具讓 AI 從回答走向行動。使用工具時要檢查資料來源、權限與輸出結果。</p></div>
+      </div>
+      <div class="layer">
+        <strong>Skill</strong>
+        <div><h3>肌肉記憶：保存可重用流程</h3><p>Skill / Workflow 把人的專業步驟、輸入、輸出、驗收標準寫成 AI 可以遵循的結構。</p></div>
+      </div>
+      <div class="layer">
+        <strong>Agent</strong>
+        <div><h3>協調者：跨步驟、跨工具、跨責任邊界</h3><p>Agent 的價值不只是自動做事，而是保存脈絡，把一個人的產出轉成下一個人能接手的輸入。</p></div>
+      </div>
+      <div class="layer">
+        <strong>Interface</strong>
+        <div><h3>入口與環境：人在哪裡進入系統</h3><p>聊天框、網頁、IDE、文件、repo 都是入口。介面會變，好的工作流會留下來。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">Day Recap</div>
+    <h2>Day 1 / Day 2 / Day 3 回顧</h2>
+    <div class="grid">
+      <article class="card green">
+        <span class="label">Day 1 Cognitive Shift</span>
+        <h3>重新認識生成式 AI</h3>
+        <ul class="clean">
+          <li>AI 不是 App，而是新的工作系統入口。</li>
+          <li>LLM 很會生成，但仍需要人類設定方向與驗證。</li>
+          <li>同一個任務可以從人工、聊天、工作流三種層次理解。</li>
+        </ul>
+      </article>
+      <article class="card amber">
+        <span class="label">Day 2 Tool Composition</span>
+        <h3>AI 工具的選擇與搭配</h3>
+        <ul class="clean">
+          <li>先判斷任務，再選工具。</li>
+          <li>公開輸出與高風險任務要加入第二模型或人工審查。</li>
+          <li>用一頁式網站任務練習從想法到可展示輸出。</li>
+        </ul>
+      </article>
+      <article class="card blue">
+        <span class="label">Day 3 Workflow Card</span>
+        <h3>把自己的方法交給協作</h3>
+        <ul class="clean">
+          <li>Prompt 是一次性對話，Skill 是可重用流程。</li>
+          <li>七問萃取法把隱性經驗變成可交接結構。</li>
+          <li>好的工作流卡要讓別人也能操作與檢查。</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">Beginner Principles</div>
+    <h2>入門 10 原則</h2>
+    <div class="principles">
+      <article class="principle"><div><h3>AI 不是搜尋引擎</h3><p>不要只問答案，要給任務、情境、限制與判斷標準。</p></div></article>
+      <article class="principle"><div><h3>一次只推進一層</h3><p>先釐清意圖，再談工具、流程、輸出與驗證。</p></div></article>
+      <article class="principle"><div><h3>先定義系統邏輯</h3><p>不要急著叫 AI 生內容，先說清楚這件事怎麼被判斷為成功。</p></div></article>
+      <article class="principle"><div><h3>文件是外部記憶</h3><p>重要流程要寫下來，否則每次都會重新解釋。</p></div></article>
+      <article class="principle"><div><h3>任務要切開</h3><p>探索、寫作、查證、設計、審查不要全塞在同一個指令。</p></div></article>
+      <article class="principle"><div><h3>Context 是資產</h3><p>保留背景、決策、限制與版本，AI 才能延續工作。</p></div></article>
+      <article class="principle"><div><h3>真實資料優先</h3><p>能給範例、表格、log、原文，就不要只給抽象描述。</p></div></article>
+      <article class="principle"><div><h3>每次輸出都驗證</h3><p>AI 很會講得合理，但合理不等於正確。</p></div></article>
+      <article class="principle"><div><h3>用精準術語溝通</h3><p>任務、輸入、輸出、驗收標準、風險、責任人都要講清楚。</p></div></article>
+      <article class="principle"><div><h3>AI 是協作者</h3><p>不是代工仔，也不是許願池。你仍然是工作與品質的 owner。</p></div></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">Pitfalls</div>
+    <h2>常見踩坑</h2>
+    <div class="pitfalls">
+      <div class="pitfall"><strong>把 AI 當聊天工具</strong><span>只會得到零散回答，很難累積流程。</span></div>
+      <div class="pitfall"><strong>一次塞太多需求</strong><span>目標、資料、版面、審查混在一起，結果通常會失焦。</span></div>
+      <div class="pitfall"><strong>沒有驗證就相信完成</strong><span>要看來源、測試、差異、事實與人工判斷。</span></div>
+      <div class="pitfall"><strong>用假資料做真決策</strong><span>示意資料可以練習，但不能直接當成可交付成果。</span></div>
+      <div class="pitfall"><strong>忽略責任邊界</strong><span>AI 可以整理和提醒，但專業判斷仍由人負責。</span></div>
+      <div class="pitfall"><strong>沒有把好流程保存下來</strong><span>如果不寫成工作流卡，下次還是會從頭開始。</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="kicker">Next Paths</div>
+    <h2>下一步學習路徑</h2>
+    <div class="next">
+      <a href="docs/01-foundations/five-layer-model.md">
+        <span class="label">Foundations</span>
+        <h3>回到五層模型</h3>
+        <p>用比較完整的架構語言理解 LLM、Tools、Skill、Agent 與 Interface。</p>
+      </a>
+      <a href="docs/04-curriculum/learning-path.md">
+        <span class="label">Curriculum</span>
+        <h3>讀完整學習路徑</h3>
+        <p>從 conversation 到 tools、skills、agents，逐步建立 AI-native 工作方法。</p>
+      </a>
+      <a href="docs/examples/workflow-to-skill.md">
+        <span class="label">Workflow</span>
+        <h3>看 workflow 如何變 Skill</h3>
+        <p>理解一個日常工作流程如何變成 AI 可以遵循與複用的結構。</p>
+      </a>
+    </div>
+    <div class="note">後續會新增工具章節：ChatGPT、Claude、AI Studio，以及作為 Agent 概念的 Hermes。</div>
+  </section>
+
+  <footer class="footer">
+    <h2>這是一套會長大的學習架構</h2>
+    <p>Day 1/2/3 是第一個入口。後面會繼續長出工具章節、工作流章節、Agent 章節，以及給人類和 AI agent 都能讀懂的操作手冊。</p>
+  </footer>
+</main>
+</body>
+</html>

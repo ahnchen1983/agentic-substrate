@@ -54,6 +54,7 @@
     text-align: center;
     padding: 80px 24px 60px;
     position: relative;
+    overflow: hidden;
   }
   .hero::before {
     content: '';
@@ -96,6 +97,45 @@
   .cta-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
   .cta-secondary { border: 1px solid var(--border); color: var(--text); }
   .cta-secondary:hover { border-color: var(--accent); color: var(--accent); }
+  .audience-routes {
+    width: min(980px, 100%);
+    margin: 28px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    position: relative;
+  }
+  .route-card {
+    min-width: 0;
+    display: block;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(18,18,26,0.82);
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .route-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(99,102,241,0.14);
+  }
+  .route-card b {
+    display: block;
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.35;
+    margin-bottom: 6px;
+    overflow-wrap: anywhere;
+  }
+  .route-card span {
+    display: block;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
 
   /* Section */
   section { padding: 60px 0; }
@@ -357,10 +397,23 @@
   nav a:hover { color: var(--text); }
 
   @media (max-width: 640px) {
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 18px;
+    }
     .hero { padding: 48px 16px 40px; }
     section { padding: 40px 0; }
     .layer-card { grid-template-columns: 40px 1fr; }
-    .product-grid { margin: 0 -24px; padding: 0 24px; }
+    .product-grid { margin: 0; padding: 0; max-width: 100%; }
+    .product-grid table { width: 100%; min-width: 0; table-layout: fixed; font-size: 0.72rem; }
+    .product-grid th, .product-grid td { padding: 8px 6px; }
+    .product-grid th { white-space: normal; overflow-wrap: anywhere; }
+    .product-grid td:first-child { white-space: normal; }
+    .audience-routes { grid-template-columns: 1fr; }
+  }
+  @media (min-width: 641px) and (max-width: 980px) {
+    .audience-routes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 </style>
 </head>
@@ -593,13 +646,31 @@ function App() {
       <header className="hero">
         <h1>Agentic Substrate</h1>
         <p className="subtitle">
-          The foundational architecture of LLM-native software — explained so everyone can understand it.<br/>
-          <span style={{fontSize:'0.88em'}}>LLM 原生軟體的底層架構原則——讓每個人都能理解的方式來解釋。</span>
+          A learning architecture for understanding LLM-native work systems — from ChatGPT and Claude to Tools, Skills, Agents, and human handoffs.<br/>
+          <span style={{fontSize:'0.88em'}}>一套理解 LLM 時代工作系統的學習架構：從聊天入口，走到工具、工作流、Skill、Agent 與專業交接。</span>
         </p>
         <div className="cta">
-          <a href="course.html" className="cta-primary">Open Interactive Course</a>
-          <a href="docs/03-claude-case-study/claude-architecture.md" className="cta-primary">Read: A Letter from the Inside</a>
-          <a href="docs/04-curriculum/learning-path.md" className="cta-secondary">Start Learning</a>
+          <a href="course-summary.html" className="cta-primary">Start with the 3-Day Summary</a>
+          <a href="#five-layers" className="cta-primary">Understand the Five-Layer Model</a>
+          <a href="#products" className="cta-secondary">Explore AI Tools & Hermes</a>
+        </div>
+        <div className="audience-routes" aria-label="Learning entry points">
+          <a className="route-card" href="course-summary.html">
+            <b>第一次學 AI</b>
+            <span>三日課程總整理</span>
+          </a>
+          <a className="route-card" href="#five-layers">
+            <b>理解核心架構</b>
+            <span>五層模型</span>
+          </a>
+          <a className="route-card" href="#products">
+            <b>選擇 AI 工具</b>
+            <span>ChatGPT / Claude / AI Studio / Hermes</span>
+          </a>
+          <a className="route-card" href="agent-education/README.md">
+            <b>給 Agent / 開發者</b>
+            <span>Agent Education / GitHub</span>
+          </a>
         </div>
       </header>
 
