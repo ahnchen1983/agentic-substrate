@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>三日課程總整理｜從 Chat 到 Agentic Workflow</title>
-<meta name="description" content="Agentic Substrate 三日課程總整理：用五層模型回顧 Day 1/2/3，整理入門原則、常見踩坑與下一步學習路徑。">
+<meta name="description" content="Agentic Substrate 三日課程總整理：用五層模型回顧 Day 1/2/3，整理入門原則、常見問題與下一步學習路徑。">
 <style>
 * { box-sizing: border-box; }
 :root {
@@ -420,8 +420,8 @@ ul.clean li::before {
     <div class="hero-copy">
       <div class="kicker">Course Summary</div>
       <h1>三日課程總整理：從 Chat 到 Agentic Workflow</h1>
-      <p class="lead">這三天學到的不是一串工具名稱，而是一套看懂 LLM 時代工作系統的方法：模型負責理解與生成，工具負責行動，Skill 保存流程，Agent 協調人、工具與責任邊界。</p>
-      <div class="note">核心句：你不是在用 AI，你是在設計一個會幫你工作的系統。</div>
+      <p class="lead">這三天以五層模型整理 LLM 原生系統的基本構成：模型負責理解與生成，工具提供外部行動能力，Skill 保存可重用流程，Agent 協調人、工具與責任邊界。</p>
+      <div class="note">本頁用途：把 Day 1/2/3 的課程內容整理成可回顧、可延伸的學習地圖。</div>
     </div>
     <aside class="hero-card" aria-label="Three day route">
       <div>
@@ -429,31 +429,31 @@ ul.clean li::before {
         <p>先換地圖，再選工具，最後把自己的工作方法寫成可交接、可驗證、可重用的流程。</p>
       </div>
       <div class="route">
-        <div class="route-item"><b>1</b><span>重新認識 AI：不是 App，是新工作系統入口</span></div>
-        <div class="route-item"><b>2</b><span>選擇與搭配工具：不是追品牌，是組能力</span></div>
-        <div class="route-item"><b>3</b><span>寫出工作流卡：讓專業方法可以被協作</span></div>
+        <div class="route-item"><b>1</b><span>重新認識 AI：從單一應用程式轉向系統層理解</span></div>
+        <div class="route-item"><b>2</b><span>選擇與搭配工具：依任務需求判斷工具角色</span></div>
+        <div class="route-item"><b>3</b><span>寫出工作流卡：將工作方法整理成可交接流程</span></div>
       </div>
     </aside>
   </section>
 
   <section class="section">
     <div class="kicker">System View</div>
-    <h2>三天學到的不是工具，而是一套系統觀</h2>
+    <h2>三天課程對應的系統觀</h2>
     <div class="grid three">
       <article class="card green">
         <span class="label">Day 1</span>
-        <h3>AI 不是搜尋引擎</h3>
-        <p>搜尋給你連結，聊天給你答案；但 LLM-native 工作方法要處理的是任務、情境、判斷與驗證。</p>
+        <h3>從搜尋到任務處理</h3>
+        <p>搜尋系統提供資料入口，聊天模型提供語言與推理介面；LLM 原生工作方法還需要處理任務脈絡、判斷標準與驗證程序。</p>
       </article>
       <article class="card amber">
         <span class="label">Day 2</span>
-        <h3>工具是能力，不是品牌</h3>
-        <p>ChatGPT、Claude、AI Studio 或搜尋工具都只是不同入口。真正重要的是：任務需要哪一種能力？風險多高？要怎麼查證？</p>
+        <h3>工具依能力定位</h3>
+        <p>ChatGPT、Claude、AI Studio 或搜尋工具是不同系統入口。選擇時應先判斷任務需要的能力、資料新鮮度、風險程度與驗證方式。</p>
       </article>
       <article class="card blue">
         <span class="label">Day 3</span>
-        <h3>流程才會累積專業</h3>
-        <p>當你的方法被寫成工作流卡，AI 才能照著跑，同學才看得懂，下一位專業負責人才接得下去。</p>
+        <h3>流程保存專業脈絡</h3>
+        <p>當工作方法被整理成工作流卡，步驟、輸入、輸出與檢查標準才容易被他人理解、測試與接續。</p>
       </article>
     </div>
   </section>
@@ -464,19 +464,19 @@ ul.clean li::before {
     <div class="stack">
       <div class="layer">
         <strong>LLM</strong>
-        <div><h3>大腦：理解、推理、生成</h3><p>模型能讀懂你的意圖、整理資料、產生文字與方案，但它本身不等於完整工作系統。</p></div>
+        <div><h3>模型層：理解、推理、生成</h3><p>模型可以處理語言、整理資料並產生方案，但仍需要工具、流程與驗證機制才能形成完整工作系統。</p></div>
       </div>
       <div class="layer">
         <strong>Tools</strong>
-        <div><h3>手腳：查資料、讀檔案、產出行動</h3><p>工具讓 AI 從回答走向行動。使用工具時要檢查資料來源、權限與輸出結果。</p></div>
+        <div><h3>工具層：資料存取與外部行動</h3><p>工具讓模型能查詢資料、讀取檔案、產生文件或呼叫外部服務。使用工具時要檢查來源、權限與輸出結果。</p></div>
       </div>
       <div class="layer">
         <strong>Skill</strong>
-        <div><h3>肌肉記憶：保存可重用流程</h3><p>Skill / Workflow 把人的專業步驟、輸入、輸出、驗收標準寫成 AI 可以遵循的結構。</p></div>
+        <div><h3>流程層：保存可重用工作方法</h3><p>Skill / Workflow 將步驟、輸入、輸出與驗收標準整理成 AI 可以遵循的結構。</p></div>
       </div>
       <div class="layer">
         <strong>Agent</strong>
-        <div><h3>協調者：跨步驟、跨工具、跨責任邊界</h3><p>Agent 的價值不只是自動做事，而是保存脈絡，把一個人的產出轉成下一個人能接手的輸入。</p></div>
+        <div><h3>Agent 層：跨步驟與責任邊界的協調</h3><p>Agent 的角色是維持目標與脈絡，協調工具、流程與人類覆核，並支援專業交接。</p></div>
       </div>
       <div class="layer">
         <strong>Interface</strong>
@@ -493,7 +493,7 @@ ul.clean li::before {
         <span class="label">Day 1 Cognitive Shift</span>
         <h3>重新認識生成式 AI</h3>
         <ul class="clean">
-          <li>AI 不是 App，而是新的工作系統入口。</li>
+          <li>AI 可以從單一應用程式入口，延伸為工作系統的一部分。</li>
           <li>LLM 很會生成，但仍需要人類設定方向與驗證。</li>
           <li>同一個任務可以從人工、聊天、工作流三種層次理解。</li>
         </ul>
@@ -509,7 +509,7 @@ ul.clean li::before {
       </article>
       <article class="card blue">
         <span class="label">Day 3 Workflow Card</span>
-        <h3>把自己的方法交給協作</h3>
+        <h3>整理自己的工作方法</h3>
         <ul class="clean">
           <li>Prompt 是一次性對話，Skill 是可重用流程。</li>
           <li>七問萃取法把隱性經驗變成可交接結構。</li>
@@ -523,22 +523,22 @@ ul.clean li::before {
     <div class="kicker">Beginner Principles</div>
     <h2>入門 10 原則</h2>
     <div class="principles">
-      <article class="principle"><div><h3>AI 不是搜尋引擎</h3><p>不要只問答案，要給任務、情境、限制與判斷標準。</p></div></article>
+      <article class="principle"><div><h3>區分搜尋與任務處理</h3><p>除了提問，也要提供任務、情境、限制與判斷標準。</p></div></article>
       <article class="principle"><div><h3>一次只推進一層</h3><p>先釐清意圖，再談工具、流程、輸出與驗證。</p></div></article>
       <article class="principle"><div><h3>先定義系統邏輯</h3><p>不要急著叫 AI 生內容，先說清楚這件事怎麼被判斷為成功。</p></div></article>
-      <article class="principle"><div><h3>文件是外部記憶</h3><p>重要流程要寫下來，否則每次都會重新解釋。</p></div></article>
+      <article class="principle"><div><h3>文件作為外部記憶</h3><p>將流程、決策與檢查標準寫入文件，可以降低重複溝通成本。</p></div></article>
       <article class="principle"><div><h3>任務要切開</h3><p>探索、寫作、查證、設計、審查不要全塞在同一個指令。</p></div></article>
       <article class="principle"><div><h3>Context 是資產</h3><p>保留背景、決策、限制與版本，AI 才能延續工作。</p></div></article>
       <article class="principle"><div><h3>真實資料優先</h3><p>能給範例、表格、log、原文，就不要只給抽象描述。</p></div></article>
       <article class="principle"><div><h3>每次輸出都驗證</h3><p>AI 很會講得合理，但合理不等於正確。</p></div></article>
       <article class="principle"><div><h3>用精準術語溝通</h3><p>任務、輸入、輸出、驗收標準、風險、責任人都要講清楚。</p></div></article>
-      <article class="principle"><div><h3>AI 是協作者</h3><p>不是代工仔，也不是許願池。你仍然是工作與品質的 owner。</p></div></article>
+      <article class="principle"><div><h3>保留人類責任邊界</h3><p>AI 可以協助整理、產出與檢查；工作目標、品質與最終判斷仍由人負責。</p></div></article>
     </div>
   </section>
 
   <section class="section">
     <div class="kicker">Pitfalls</div>
-    <h2>常見踩坑</h2>
+    <h2>常見問題</h2>
     <div class="pitfalls">
       <div class="pitfall"><strong>把 AI 當聊天工具</strong><span>只會得到零散回答，很難累積流程。</span></div>
       <div class="pitfall"><strong>一次塞太多需求</strong><span>目標、資料、版面、審查混在一起，結果通常會失焦。</span></div>
