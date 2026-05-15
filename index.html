@@ -24,24 +24,29 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0a0a0f;
-    --surface: #12121a;
-    --surface2: #1a1a26;
-    --border: #2a2a3a;
-    --text: #e8e8f0;
-    --text-dim: #8888a0;
-    --accent: #6366f1;
-    --accent-glow: rgba(99,102,241,0.3);
-    --l1: #f59e0b;
-    --l2: #10b981;
-    --l3: #6366f1;
-    --l4: #ec4899;
-    --l5: #06b6d4;
+    --bg: #e6e1dc;
+    --surface: #fffdf9;
+    --surface2: #f5f5f5;
+    --border: #d7d0c9;
+    --text: #000000;
+    --text-dim: #4d4d4d;
+    --muted: #808080;
+    --accent: #ce7857;
+    --accent-hover: #c46e4f;
+    --accent-soft: #e8ccc0;
+    --accent-glow: rgba(206,120,87,0.22);
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-md: 0 8px 24px rgba(0,0,0,0.12);
+    --l1: #ce7857;
+    --l2: #000000;
+    --l3: #a85c45;
+    --l4: #4d4d4d;
+    --l5: #808080;
   }
 
   body {
     font-family: 'Inter', 'Noto Sans TC', -apple-system, sans-serif;
-    background: var(--bg);
+    background: linear-gradient(180deg, #f5f2ee 0%, var(--bg) 100%);
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
@@ -52,7 +57,7 @@
   /* Hero */
   .hero {
     text-align: center;
-    padding: 80px 24px 60px;
+    padding: 78px 24px 56px;
     position: relative;
     overflow: hidden;
   }
@@ -61,24 +66,43 @@
     position: absolute;
     top: 0; left: 50%;
     transform: translateX(-50%);
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    width: 540px; height: 540px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 68%);
     pointer-events: none;
-    opacity: 0.4;
+    opacity: 0.72;
+  }
+  .brand-mark {
+    width: 74px;
+    height: 74px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background:
+      radial-gradient(circle at center, var(--accent) 0 16%, transparent 17% 30%, var(--accent) 31% 34%, transparent 35%),
+      repeating-conic-gradient(from 0deg, var(--accent) 0deg 10deg, transparent 10deg 45deg);
+    position: relative;
+  }
+  .brand-mark::after {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border-radius: 50%;
+    background: var(--bg);
   }
   .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2.2rem, 5.6vw, 4.1rem);
     font-weight: 800;
     letter-spacing: -0.03em;
-    margin-bottom: 12px;
+    line-height: 1.05;
+    margin-bottom: 18px;
     position: relative;
   }
   .hero .subtitle {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     color: var(--text-dim);
-    max-width: 640px;
-    margin: 0 auto 32px;
+    max-width: 760px;
+    margin: 0 auto 30px;
     position: relative;
+    line-height: 1.75;
   }
   .hero .cta {
     display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;
@@ -86,16 +110,16 @@
   }
   .hero .cta a {
     display: inline-block;
-    padding: 10px 24px;
+    padding: 12px 24px;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9rem;
     text-decoration: none;
     transition: all 0.2s;
   }
-  .cta-primary { background: var(--accent); color: #fff; }
-  .cta-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
-  .cta-secondary { border: 1px solid var(--border); color: var(--text); }
+  .cta-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow-sm); }
+  .cta-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+  .cta-secondary { border: 1px solid #000; color: var(--text); background: rgba(255,255,255,0.36); }
   .cta-secondary:hover { border-color: var(--accent); color: var(--accent); }
   .audience-routes {
     width: min(980px, 100%);
@@ -110,8 +134,8 @@
     display: block;
     padding: 16px;
     border: 1px solid var(--border);
-    border-radius: 14px;
-    background: rgba(18,18,26,0.82);
+    border-radius: 8px;
+    background: rgba(255,253,249,0.78);
     text-align: left;
     text-decoration: none;
     transition: all 0.2s;
@@ -119,7 +143,7 @@
   .route-card:hover {
     border-color: var(--accent);
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(99,102,241,0.14);
+    box-shadow: var(--shadow-sm);
   }
   .route-card b {
     display: block;
@@ -171,8 +195,8 @@
     border: 1px solid transparent;
   }
   .layer-card:hover, .layer-card.active {
-    border-color: var(--layer-color);
-    box-shadow: 0 0 24px color-mix(in srgb, var(--layer-color) 25%, transparent);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-sm);
     transform: scale(1.01);
   }
   .layer-num {
@@ -182,7 +206,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--layer-color);
-    background: color-mix(in srgb, var(--layer-color) 10%, var(--surface));
+    background: var(--accent-soft);
   }
   .layer-body {
     padding: 16px 20px;
@@ -191,7 +215,7 @@
   .layer-body h3 {
     font-size: 1.05rem;
     font-weight: 700;
-    color: var(--layer-color);
+    color: var(--text);
     margin-bottom: 2px;
   }
   .layer-body .layer-zh {
@@ -292,7 +316,7 @@
   }
   .path-node:hover .path-dot {
     transform: scale(1.3);
-    box-shadow: 0 0 0 4px var(--bg), 0 0 16px color-mix(in srgb, var(--node-color) 50%, transparent);
+    box-shadow: 0 0 0 4px var(--bg), var(--shadow-sm);
   }
   .path-content h4 {
     font-size: 1rem;
@@ -315,8 +339,8 @@
     border-radius: 999px;
     font-size: 0.75rem;
     font-weight: 600;
-    background: color-mix(in srgb, var(--node-color) 15%, transparent);
-    color: var(--node-color);
+    background: var(--accent-soft);
+    color: #000;
   }
 
   /* Composition */
@@ -324,7 +348,7 @@
     max-width: 640px;
     margin: 0 auto;
     background: var(--surface);
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 32px;
     border: 1px solid var(--border);
   }
@@ -348,9 +372,9 @@
   }
   .comp-skill.highlight {
     border-color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 15%, var(--surface));
-    color: var(--accent);
-    box-shadow: 0 0 12px var(--accent-glow);
+    background: var(--accent-soft);
+    color: #000;
+    box-shadow: var(--shadow-sm);
   }
   .comp-arrow {
     color: var(--text-dim);
@@ -379,7 +403,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    background: rgba(230,225,220,0.86);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     padding: 12px 24px;
@@ -644,6 +668,7 @@ function App() {
       </nav>
 
       <header className="hero">
+        <div className="brand-mark" aria-hidden="true"></div>
         <h1>Agentic Substrate</h1>
         <p className="subtitle">
           A reference architecture and learning map for LLM-native systems: models, tools, workflows, agents, interfaces, and human handoffs.<br/>
